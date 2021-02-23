@@ -41,22 +41,16 @@
                                 <rect key="frame" x="0.0" y="140" width="390" height="590"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqq-S5-h4m">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="628"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="555.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legal Disclaimer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cm-O8-1Qn">
-                                                <rect key="frame" x="16" y="72.333333333333343" width="358" height="20.666666666666671"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comprehensive Ranking System Tool" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2u-Sc-6nA">
-                                                <rect key="frame" x="16" y="0.0" width="358" height="20.333333333333332"/>
+                                                <rect key="frame" x="16" y="0.0" width="358" height="20.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCv-M0-pH3">
-                                                <rect key="frame" x="16" y="474.33333333333343" width="358" height="133.66666666666669"/>
+                                                <rect key="frame" x="16" y="402" width="358" height="133.66666666666663"/>
                                                 <string key="text">- You’re eligible for at least 1 Express Entry program; and
 - You have not filled out an Express Entry profile but you’d like to see what your Comprehensive Ranking System (CRS) score might be if you do; or
 - You were invited to apply for permanent residence, and want to see if a change to your profile may affect your CRS score</string>
@@ -65,27 +59,21 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Aq-dR-y8q">
-                                                <rect key="frame" x="16" y="98" width="358" height="184"/>
+                                                <rect key="frame" x="16" y="25.666666666666657" width="358" height="184"/>
                                                 <string key="text">This tool is intended solely for general guidance and reference purposes. In the event of any discrepancy between the results of this questionnaire and that provided by the Express Entry electronic system, the results provided by the system shall govern, in accordance with provisions of the Immigration and Refugee Protection Act, the Immigration and Refugee Protection Regulations, and Minister's Instructions issued under IRPA s.10.3. This tool will be updated from time to time in accordance with changes to the Ministerial Instructions governing Express Entry.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skilled Immigrants (Express Entry)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHo-F5-thl">
-                                                <rect key="frame" x="16" y="25.333333333333343" width="358" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUY-DJ-axi">
-                                                <rect key="frame" x="16" y="302" width="358" height="117"/>
+                                                <rect key="frame" x="16" y="229.66666666666669" width="358" height="117"/>
                                                 <string key="text">This tool will help you calculate your Comprehensive Ranking System (CRS) score based on the answers you provide. The CRS is a points-based system that we use to assess and score your profile and rank it in the Express Entry pool. It’s used to assess your: skills, education, language ability, work experience, other factors.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use this tool if:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-oy-DuX">
-                                                <rect key="frame" x="16" y="449" width="358" height="20.333333333333314"/>
+                                                <rect key="frame" x="16" y="376.66666666666663" width="358" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -95,23 +83,17 @@
                                         <constraints>
                                             <constraint firstItem="DUY-DJ-axi" firstAttribute="top" secondItem="3Aq-dR-y8q" secondAttribute="bottom" constant="20" id="1k3-3s-4vu"/>
                                             <constraint firstItem="3Aq-dR-y8q" firstAttribute="leading" secondItem="Xqq-S5-h4m" secondAttribute="leading" constant="16" id="39n-sr-KJb"/>
-                                            <constraint firstAttribute="trailing" secondItem="yHo-F5-thl" secondAttribute="trailing" constant="16" id="3Xl-Bj-l5Z"/>
-                                            <constraint firstItem="5cm-O8-1Qn" firstAttribute="top" secondItem="yHo-F5-thl" secondAttribute="bottom" constant="30" id="3jk-bP-8JU"/>
                                             <constraint firstItem="3Aq-dR-y8q" firstAttribute="top" secondItem="5cm-O8-1Qn" secondAttribute="bottom" constant="5" id="Dna-hy-4cB"/>
                                             <constraint firstAttribute="trailing" secondItem="5cm-O8-1Qn" secondAttribute="trailing" constant="16" id="MXW-JV-6XU"/>
-                                            <constraint firstAttribute="trailing" secondItem="V2u-Sc-6nA" secondAttribute="trailing" constant="16" id="MqP-rt-afZ"/>
                                             <constraint firstAttribute="trailing" secondItem="uCv-M0-pH3" secondAttribute="trailing" constant="16" id="NDl-dv-Qa8"/>
                                             <constraint firstItem="uCv-M0-pH3" firstAttribute="top" secondItem="RDd-oy-DuX" secondAttribute="bottom" constant="5" id="PCj-Wt-CG3"/>
                                             <constraint firstAttribute="trailing" secondItem="3Aq-dR-y8q" secondAttribute="trailing" constant="16" id="TBJ-C6-dgG"/>
-                                            <constraint firstItem="V2u-Sc-6nA" firstAttribute="leading" secondItem="Xqq-S5-h4m" secondAttribute="leading" constant="16" id="Xbu-ax-ONK"/>
                                             <constraint firstAttribute="trailing" secondItem="RDd-oy-DuX" secondAttribute="trailing" constant="16" id="a40-EK-ZaH"/>
                                             <constraint firstItem="5cm-O8-1Qn" firstAttribute="leading" secondItem="Xqq-S5-h4m" secondAttribute="leading" constant="16" id="btE-P0-yNA"/>
-                                            <constraint firstItem="yHo-F5-thl" firstAttribute="leading" secondItem="Xqq-S5-h4m" secondAttribute="leading" constant="16" id="c4M-rn-SW6"/>
                                             <constraint firstItem="DUY-DJ-axi" firstAttribute="leading" secondItem="Xqq-S5-h4m" secondAttribute="leading" constant="16" id="fX5-bG-HBZ"/>
+                                            <constraint firstItem="5cm-O8-1Qn" firstAttribute="top" secondItem="Xqq-S5-h4m" secondAttribute="top" id="jdo-bY-wTu"/>
                                             <constraint firstItem="RDd-oy-DuX" firstAttribute="top" secondItem="DUY-DJ-axi" secondAttribute="bottom" constant="30" id="kLw-xx-tDF"/>
                                             <constraint firstAttribute="trailing" secondItem="DUY-DJ-axi" secondAttribute="trailing" constant="16" id="lkW-ph-GPv"/>
-                                            <constraint firstItem="V2u-Sc-6nA" firstAttribute="top" secondItem="Xqq-S5-h4m" secondAttribute="top" id="nsf-YX-QaF"/>
-                                            <constraint firstItem="yHo-F5-thl" firstAttribute="top" secondItem="V2u-Sc-6nA" secondAttribute="bottom" constant="5" id="pHs-Fa-tch"/>
                                             <constraint firstAttribute="bottom" secondItem="uCv-M0-pH3" secondAttribute="bottom" constant="20" id="rKp-MW-sju"/>
                                             <constraint firstItem="uCv-M0-pH3" firstAttribute="leading" secondItem="Xqq-S5-h4m" secondAttribute="leading" constant="16" id="uiq-AK-p70"/>
                                             <constraint firstItem="RDd-oy-DuX" firstAttribute="leading" secondItem="Xqq-S5-h4m" secondAttribute="leading" constant="16" id="wwL-Xq-eCv"/>
