@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lx7-1h-hXh">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController title="StartView" id="rqG-gY-yja" customClass="StartViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2zA-IX-a9s">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBs-HC-Tzw">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cCx-pc-Ruj"/>
@@ -38,19 +38,19 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jl3-gF-wHQ">
-                                <rect key="frame" x="0.0" y="140" width="390" height="590"/>
+                                <rect key="frame" x="0.0" y="140" width="428" height="672"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqq-S5-h4m">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="555.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="505.66666666666669"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legal Disclaimer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cm-O8-1Qn">
-                                                <rect key="frame" x="16" y="0.0" width="358" height="20.666666666666668"/>
+                                                <rect key="frame" x="16" y="0.0" width="396" height="20.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCv-M0-pH3">
-                                                <rect key="frame" x="16" y="402" width="358" height="133.66666666666663"/>
+                                                <rect key="frame" x="16" y="368.66666666666669" width="396" height="117"/>
                                                 <string key="text">- You’re eligible for at least 1 Express Entry program; and
 - You have not filled out an Express Entry profile but you’d like to see what your Comprehensive Ranking System (CRS) score might be if you do; or
 - You were invited to apply for permanent residence, and want to see if a change to your profile may affect your CRS score</string>
@@ -59,21 +59,21 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Aq-dR-y8q">
-                                                <rect key="frame" x="16" y="25.666666666666657" width="358" height="184"/>
+                                                <rect key="frame" x="16" y="25.666666666666657" width="396" height="167.33333333333334"/>
                                                 <string key="text">This tool is intended solely for general guidance and reference purposes. In the event of any discrepancy between the results of this questionnaire and that provided by the Express Entry electronic system, the results provided by the system shall govern, in accordance with provisions of the Immigration and Refugee Protection Act, the Immigration and Refugee Protection Regulations, and Minister's Instructions issued under IRPA s.10.3. This tool will be updated from time to time in accordance with changes to the Ministerial Instructions governing Express Entry.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUY-DJ-axi">
-                                                <rect key="frame" x="16" y="229.66666666666669" width="358" height="117"/>
+                                                <rect key="frame" x="16" y="213.00000000000003" width="396" height="100.33333333333334"/>
                                                 <string key="text">This tool will help you calculate your Comprehensive Ranking System (CRS) score based on the answers you provide. The CRS is a points-based system that we use to assess and score your profile and rank it in the Express Entry pool. It’s used to assess your: skills, education, language ability, work experience, other factors.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use this tool if:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDd-oy-DuX">
-                                                <rect key="frame" x="16" y="376.66666666666663" width="358" height="20.333333333333314"/>
+                                                <rect key="frame" x="16" y="343.33333333333331" width="396" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -125,14 +125,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22N-e0-vtZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="475.36231884057975" y="44.021739130434788"/>
+            <point key="canvasLocation" x="-649" y="43"/>
         </scene>
         <!--Profiles-->
         <scene sceneID="fiO-tz-tKS">
             <objects>
                 <tableViewController id="Cqp-5o-0By" customClass="ScoresTableViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="e9k-0Z-ajm">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
@@ -161,18 +161,18 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsy-DA-D8p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="847"/>
+            <point key="canvasLocation" x="329" y="43"/>
         </scene>
         <!--Lastest Draw-->
         <scene sceneID="N7N-tC-6VJ">
             <objects>
                 <viewController id="cdL-0Z-L8j" customClass="DrawsViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sqt-L6-aMX">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o14-LS-iok">
-                                <rect key="frame" x="0.0" y="140" width="390" height="704"/>
+                                <rect key="frame" x="0.0" y="140" width="428" height="786"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -196,50 +196,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NE5-4h-alf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1429" y="852"/>
+            <point key="canvasLocation" x="329" y="825"/>
         </scene>
         <!--MaritalStatus-->
         <scene sceneID="8PK-us-Shr">
             <objects>
                 <viewController title="MaritalStatus" id="jNY-xu-L9v" customClass="MaritalStatusViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gcx-tf-4zX">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your marital status?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ1-7F-LoL">
-                                <rect key="frame" x="16" y="140" width="358" height="20.333333333333343"/>
+                                <rect key="frame" x="16" y="140" width="396" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWh-vn-99Q">
-                                <rect key="frame" x="0.0" y="170.33333333333334" width="390" height="160.00000000000003"/>
+                                <rect key="frame" x="0.0" y="170.33333333333334" width="428" height="160.00000000000003"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="eet-4p-jL3"/>
                                 </constraints>
                             </pickerView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="isPartnerCanadian" translatesAutoresizingMaskIntoConstraints="NO" id="8ea-g3-Lyx">
-                                <rect key="frame" x="325" y="375.33333333333331" width="51" height="31"/>
+                                <rect key="frame" x="363" y="375.33333333333331" width="51" height="31"/>
                                 <color key="onTintColor" name="Blue"/>
                                 <connections>
                                     <action selector="isPartnerCanadianChanged:" destination="jNY-xu-L9v" eventType="valueChanged" id="jEx-yX-oeq"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="isWithPartner" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-KO-lUR">
-                                <rect key="frame" x="325" y="456.33333333333331" width="51" height="31"/>
+                                <rect key="frame" x="363" y="456.33333333333331" width="51" height="31"/>
                                 <color key="onTintColor" name="Blue"/>
                                 <connections>
                                     <action selector="isWithPartnerChanged:" destination="jNY-xu-L9v" eventType="valueChanged" id="Pq3-6c-44y"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Will your spouse or common-law partner come with you to Canada?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZN-QQ-z9C">
-                                <rect key="frame" x="16" y="451.33333333333331" width="289" height="40.666666666666686"/>
+                                <rect key="frame" x="16" y="451.33333333333331" width="331" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6d-LI-6qe">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zcB-AM-D1Y"/>
@@ -259,7 +259,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is your spouse or common-law partner a citizen or permanent resident of Canada?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjW-DJ-kZH">
-                                <rect key="frame" x="16" y="360.33333333333331" width="289" height="61"/>
+                                <rect key="frame" x="16" y="360.33333333333331" width="331" height="61"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -272,8 +272,8 @@
                             <constraint firstItem="5La-P6-TR4" firstAttribute="trailing" secondItem="b6d-LI-6qe" secondAttribute="trailing" constant="16" id="3kX-qt-VPk"/>
                             <constraint firstItem="5La-P6-TR4" firstAttribute="trailing" secondItem="8ea-g3-Lyx" secondAttribute="trailing" constant="16" id="A0M-LE-igo"/>
                             <constraint firstItem="SjW-DJ-kZH" firstAttribute="leading" secondItem="Gcx-tf-4zX" secondAttribute="leading" constant="16" id="As9-2K-ucF"/>
-                            <constraint firstItem="8ea-g3-Lyx" firstAttribute="leading" secondItem="SjW-DJ-kZH" secondAttribute="trailing" constant="20" id="DJ7-dt-9QU"/>
-                            <constraint firstItem="kWe-KO-lUR" firstAttribute="leading" secondItem="aZN-QQ-z9C" secondAttribute="trailing" constant="20" id="DrO-9R-WP0"/>
+                            <constraint firstItem="8ea-g3-Lyx" firstAttribute="leading" secondItem="SjW-DJ-kZH" secondAttribute="trailing" constant="16" id="DJ7-dt-9QU"/>
+                            <constraint firstItem="kWe-KO-lUR" firstAttribute="leading" secondItem="aZN-QQ-z9C" secondAttribute="trailing" constant="16" id="DrO-9R-WP0"/>
                             <constraint firstItem="JWh-vn-99Q" firstAttribute="leading" secondItem="5La-P6-TR4" secondAttribute="leading" id="LRc-EU-YsJ"/>
                             <constraint firstItem="SjW-DJ-kZH" firstAttribute="centerY" secondItem="8ea-g3-Lyx" secondAttribute="centerY" id="PxU-7J-rFE"/>
                             <constraint firstItem="5La-P6-TR4" firstAttribute="trailing" secondItem="bQ1-7F-LoL" secondAttribute="trailing" constant="16" id="ScJ-KF-zhA"/>
@@ -307,17 +307,18 @@
             <objects>
                 <viewController title="Age" id="Ctc-NV-w9v" customClass="AgeViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XPf-fB-kgy">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old are you?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TT9-qO-BCq">
-                                <rect key="frame" x="16" y="140" width="390" height="20.333333333333343"/>
+                                <rect key="frame" x="16" y="140" width="428" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4C9-d9-euT">
-                                <rect key="frame" x="16" y="165.33333333333334" width="358" height="67"/>
+                                <rect key="frame" x="16" y="165.33333333333334" width="396" height="67"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">- If you’ve been invited to apply, enter your age on the date you were invited.
 - If you plan to complete an Express Entry profile, enter your current age.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -325,19 +326,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="17" minValue="17" maxValue="45" translatesAutoresizingMaskIntoConstraints="NO" id="osK-Fe-Msc">
-                                <rect key="frame" x="14" y="252.33333333333337" width="362" height="31"/>
+                                <rect key="frame" x="14" y="252.33333333333337" width="400" height="31"/>
                                 <connections>
                                     <action selector="ageSliderChanged:" destination="Ctc-NV-w9v" eventType="valueChanged" id="RJL-C6-tSR"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXy-wW-eT6">
-                                <rect key="frame" x="195" y="312.33333333333331" width="0.0" height="0.0"/>
+                                <rect key="frame" x="214" y="312.33333333333331" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
                                 <color key="textColor" name="Blue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1r-yB-MFD">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="b40-0E-WeH"/>
@@ -391,17 +392,17 @@
             <objects>
                 <viewController title="Education" id="heu-Ob-v2q" customClass="EducationViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qcx-CC-0qg" userLabel="View">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your level of education?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6w-FS-blM">
-                                <rect key="frame" x="16" y="140" width="358" height="20.666666666666657"/>
+                                <rect key="frame" x="16" y="140" width="396" height="19.333333333333343"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDX-ie-dFi">
-                                <rect key="frame" x="16" y="165.66666666666663" width="358" height="217.33333333333337"/>
+                                <rect key="frame" x="16" y="164.33333333333337" width="396" height="200.66666666666663"/>
                                 <string key="text">Enter the highest level of education for which you:
 
 - Earned a Canadian degree, diploma or certificate or
@@ -413,7 +414,7 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiy-Wu-Ke0">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="QLX-sp-O2D"/>
@@ -433,7 +434,7 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5k5-mV-Ium">
-                                <rect key="frame" x="0.0" y="393" width="390" height="160"/>
+                                <rect key="frame" x="0.0" y="375" width="428" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="38x-xq-5AF"/>
                                 </constraints>
@@ -470,24 +471,24 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
             <objects>
                 <viewController title="CanadianDegree" id="wdh-jG-GQ4" customClass="CanadianDegreeViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M80-Ts-pyg">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3wC-Rc-Uvv">
-                                <rect key="frame" x="325" y="145" width="51" height="31"/>
+                                <rect key="frame" x="363" y="145" width="51" height="31"/>
                                 <color key="onTintColor" name="Blue"/>
                                 <connections>
                                     <action selector="haveCanadianDegreeChanged:" destination="wdh-jG-GQ4" eventType="valueChanged" id="Bqf-tq-bjK"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you earned a Canadian degree, diploma or certificate?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf9-Xj-d2S">
-                                <rect key="frame" x="16" y="140" width="289" height="40.666666666666657"/>
+                                <rect key="frame" x="16" y="140" width="327" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAg-gq-KEq">
-                                <rect key="frame" x="16" y="185.66666666666663" width="358" height="184"/>
+                                <rect key="frame" x="16" y="185.66666666666663" width="396" height="184"/>
                                 <string key="text">To answer Yes:
 - English or French as a Second Language must not have made up more than half your study
 - You must not have studied under an award that required you to return to your home country after graduation to apply your skills and knowledge
@@ -498,19 +499,19 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you earned a Canadian degree, diploma or certificate?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmY-rm-COd">
-                                <rect key="frame" x="16" y="399.66666666666669" width="358" height="40.666666666666686"/>
+                                <rect key="frame" x="16" y="399.66666666666669" width="396" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNb-8Y-YnB">
-                                <rect key="frame" x="0.0" y="450.33333333333326" width="390" height="160"/>
+                                <rect key="frame" x="0.0" y="450.33333333333326" width="428" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="Zsb-db-6m5"/>
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJE-tn-0KJ">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="FLR-ua-VjF"/>
@@ -571,7 +572,7 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="P2z-MR-YXr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="K45-xM-U3e">
-                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
@@ -585,18 +586,18 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQz-ts-U1G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-433.33333333333337" y="44.866071428571423"/>
+            <point key="canvasLocation" x="-1574" y="43"/>
         </scene>
         <!--Languages-->
         <scene sceneID="jgo-Yc-nGF">
             <objects>
                 <viewController title="Languages" id="gn3-8N-m0K" customClass="LanguagesViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dQ6-eA-vyh">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewf-Hy-vMd">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="jHc-aV-aqZ"/>
@@ -616,19 +617,19 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6y-rR-0ND">
-                                <rect key="frame" x="0.0" y="140" width="390" height="590"/>
+                                <rect key="frame" x="0.0" y="140" width="428" height="672"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUp-NX-8ya">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="589"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="463.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1z-yl-0IY">
-                                                <rect key="frame" x="16" y="254.66666666666669" width="244" height="0.0"/>
+                                                <rect key="frame" x="16" y="194.66666666666669" width="282" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5d3-ev-gVZ">
-                                                <rect key="frame" x="16" y="103.66666666666666" width="358" height="32"/>
+                                                <rect key="frame" x="16" y="43.666666666666657" width="396" height="32"/>
                                                 <segments>
                                                     <segment title="CELPIP"/>
                                                     <segment title="IELTS"/>
@@ -639,112 +640,99 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                                     <action selector="firstLanguageChanged:" destination="gn3-8N-m0K" eventType="valueChanged" id="a74-0p-kS7"/>
                                                 </connections>
                                             </segmentedControl>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZP-ie-2aJ">
-                                                <rect key="frame" x="16" y="43.333333333333343" width="358" height="50.333333333333343"/>
-                                                <string key="text">You need to submit language test results that are less than two years old for all programs under Express Entry, even if English or French is your first language.</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test results are must less than two years old, even if English or French is your first language." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZP-ie-2aJ">
+                                                <rect key="frame" x="16" y="0.0" width="396" height="33.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-29-Xby">
-                                                <rect key="frame" x="16" y="553" width="244" height="0.0"/>
+                                                <rect key="frame" x="16" y="427.33333333333337" width="282" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="8mM-AO-cM3">
-                                                <rect key="frame" x="280" y="178.66666666666669" width="94" height="32"/>
+                                                <rect key="frame" x="318" y="118.66666666666669" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="listeningChanged:" destination="gn3-8N-m0K" eventType="valueChanged" id="nFv-79-Pzp"/>
                                                 </connections>
                                             </stepper>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fAI-Io-2a4">
-                                                <rect key="frame" x="325" y="300.66666666666669" width="51" height="31"/>
+                                                <rect key="frame" x="363" y="240.66666666666669" width="51" height="31"/>
                                                 <color key="onTintColor" name="Blue"/>
                                                 <connections>
                                                     <action selector="haveSeconLanguageChanged:" destination="gn3-8N-m0K" eventType="valueChanged" id="NjA-G6-iW5"/>
                                                 </connections>
                                             </switch>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="8nL-xd-3C1">
-                                                <rect key="frame" x="280" y="238.66666666666669" width="94" height="32"/>
+                                                <rect key="frame" x="318" y="178.66666666666669" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="writingChanged:" destination="gn3-8N-m0K" eventType="valueChanged" id="YNm-Pm-4Wm"/>
                                                 </connections>
                                             </stepper>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="Rg3-Io-Ebi">
-                                                <rect key="frame" x="280" y="507" width="94" height="32"/>
+                                                <rect key="frame" x="318" y="381.33333333333337" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="secondReadingChanged:" destination="gn3-8N-m0K" eventType="valueChanged" id="1Ok-ZQ-g47"/>
                                                 </connections>
                                             </stepper>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If so, which language test did you take for your second official language? Test results must be less than two years old." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeA-Uu-6uI">
-                                                <rect key="frame" x="16" y="341.66666666666669" width="358" height="50.333333333333314"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJl-VV-2wc">
-                                                <rect key="frame" x="16" y="224.66666666666669" width="244" height="0.0"/>
+                                                <rect key="frame" x="16" y="164.66666666666669" width="282" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have other language results?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqK-Mt-fNQ">
-                                                <rect key="frame" x="16" y="296" width="289" height="40.666666666666686"/>
+                                                <rect key="frame" x="16" y="246.00000000000003" width="331" height="20.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="LAW-z7-TmE">
-                                                <rect key="frame" x="280" y="447" width="94" height="32"/>
+                                                <rect key="frame" x="318" y="321.33333333333331" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="secondSpeakingChanged:" destination="gn3-8N-m0K" eventType="valueChanged" id="5Na-mc-DWy"/>
                                                 </connections>
                                             </stepper>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canada's official languages are English and French." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oya-Qh-t1d">
-                                                <rect key="frame" x="16" y="0.0" width="358" height="38.333333333333336"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="hDt-xT-I9o">
-                                                <rect key="frame" x="280" y="477" width="94" height="32"/>
+                                                <rect key="frame" x="318" y="351.33333333333331" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="secondListeningChanged:" destination="gn3-8N-m0K" eventType="valueChanged" id="T3m-RP-yyL"/>
                                                 </connections>
                                             </stepper>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="fma-8C-D4h">
-                                                <rect key="frame" x="280" y="208.66666666666669" width="94" height="32"/>
+                                                <rect key="frame" x="318" y="148.66666666666669" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="readingChanged:" destination="gn3-8N-m0K" eventType="valueChanged" id="M8f-KD-NEN"/>
                                                 </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNz-kU-sXa">
-                                                <rect key="frame" x="16" y="463" width="244" height="0.0"/>
+                                                <rect key="frame" x="16" y="337.33333333333331" width="282" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZ6-Q8-EhL">
-                                                <rect key="frame" x="16" y="523" width="244" height="0.0"/>
+                                                <rect key="frame" x="16" y="397.33333333333337" width="282" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bST-Th-ThQ">
-                                                <rect key="frame" x="16" y="194.66666666666669" width="244" height="0.0"/>
+                                                <rect key="frame" x="16" y="134.66666666666669" width="282" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="WVd-JL-v0D">
-                                                <rect key="frame" x="280" y="537" width="94" height="32"/>
+                                                <rect key="frame" x="318" y="411.33333333333337" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="secondWritingChanged:" destination="gn3-8N-m0K" eventType="valueChanged" id="QlN-H7-gEX"/>
                                                 </connections>
                                             </stepper>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qFS-pr-Xxe">
-                                                <rect key="frame" x="16" y="402" width="358" height="32"/>
+                                                <rect key="frame" x="16" y="276.33333333333331" width="396" height="32"/>
                                                 <segments>
                                                     <segment title="CELPIP"/>
                                                     <segment title="IELTS"/>
@@ -754,19 +742,19 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                                 </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAy-mv-9od">
-                                                <rect key="frame" x="16" y="164.66666666666669" width="244" height="0.0"/>
+                                                <rect key="frame" x="16" y="104.66666666666666" width="282" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XL-wm-xlp">
-                                                <rect key="frame" x="16" y="493" width="244" height="0.0"/>
+                                                <rect key="frame" x="16" y="367.33333333333331" width="282" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-Yi-EoV">
-                                                <rect key="frame" x="280" y="148.66666666666669" width="94" height="32"/>
+                                                <rect key="frame" x="318" y="88.666666666666657" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="speakingChanged:" destination="gn3-8N-m0K" eventType="valueChanged" id="dm2-dt-Vi4"/>
                                                 </connections>
@@ -774,7 +762,7 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="fAI-Io-2a4" firstAttribute="leading" secondItem="XqK-Mt-fNQ" secondAttribute="trailing" constant="20" id="1Hk-PB-8PH"/>
+                                            <constraint firstItem="fAI-Io-2a4" firstAttribute="leading" secondItem="XqK-Mt-fNQ" secondAttribute="trailing" constant="16" id="1Hk-PB-8PH"/>
                                             <constraint firstItem="8mM-AO-cM3" firstAttribute="centerY" secondItem="bST-Th-ThQ" secondAttribute="centerY" id="2iL-4l-Mip"/>
                                             <constraint firstItem="FAy-mv-9od" firstAttribute="top" secondItem="5d3-ev-gVZ" secondAttribute="bottom" constant="30" id="46K-A0-iDn"/>
                                             <constraint firstItem="FAy-mv-9od" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="4bO-XC-xkg"/>
@@ -784,20 +772,16 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                             <constraint firstAttribute="trailing" secondItem="LAW-z7-TmE" secondAttribute="trailing" constant="16" id="8Cv-X2-6dt"/>
                                             <constraint firstItem="6O5-29-Xby" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="AJn-DH-4FI"/>
                                             <constraint firstItem="kXl-Yi-EoV" firstAttribute="centerY" secondItem="FAy-mv-9od" secondAttribute="centerY" id="ASB-YB-P0o"/>
-                                            <constraint firstItem="UeA-Uu-6uI" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="C95-gp-AKy"/>
                                             <constraint firstItem="8nL-xd-3C1" firstAttribute="leading" secondItem="Z1z-yl-0IY" secondAttribute="trailing" constant="20" id="DbH-rB-sd8"/>
                                             <constraint firstItem="hDt-xT-I9o" firstAttribute="leading" secondItem="2XL-wm-xlp" secondAttribute="trailing" constant="20" id="F61-hM-dYN"/>
                                             <constraint firstItem="6O5-29-Xby" firstAttribute="top" secondItem="WZ6-Q8-EhL" secondAttribute="bottom" constant="30" id="FAQ-de-lGb"/>
                                             <constraint firstAttribute="trailing" secondItem="fma-8C-D4h" secondAttribute="trailing" constant="16" id="GnB-e0-yv8"/>
-                                            <constraint firstItem="qFS-pr-Xxe" firstAttribute="top" secondItem="UeA-Uu-6uI" secondAttribute="bottom" constant="10" id="HW9-ui-1RB"/>
                                             <constraint firstItem="fAI-Io-2a4" firstAttribute="top" secondItem="8nL-xd-3C1" secondAttribute="bottom" constant="30" id="IPI-Yl-ySi"/>
                                             <constraint firstItem="2XL-wm-xlp" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="IXV-xU-m9W"/>
                                             <constraint firstAttribute="trailing" secondItem="tZP-ie-2aJ" secondAttribute="trailing" constant="16" id="Ide-Wd-H0V"/>
                                             <constraint firstItem="XqK-Mt-fNQ" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="Ihw-OV-qlQ"/>
-                                            <constraint firstItem="UeA-Uu-6uI" firstAttribute="top" secondItem="fAI-Io-2a4" secondAttribute="bottom" constant="10" id="Ir6-Un-Qdv"/>
                                             <constraint firstItem="8mM-AO-cM3" firstAttribute="leading" secondItem="bST-Th-ThQ" secondAttribute="trailing" constant="20" id="J8L-N2-MnE"/>
                                             <constraint firstItem="Rg3-Io-Ebi" firstAttribute="centerY" secondItem="WZ6-Q8-EhL" secondAttribute="centerY" id="JqU-nM-Ks1"/>
-                                            <constraint firstAttribute="trailing" secondItem="Oya-Qh-t1d" secondAttribute="trailing" constant="16" id="L3r-iL-PkQ"/>
                                             <constraint firstItem="Z1z-yl-0IY" firstAttribute="top" secondItem="qJl-VV-2wc" secondAttribute="bottom" constant="30" id="Lja-g0-Hl0"/>
                                             <constraint firstItem="8nL-xd-3C1" firstAttribute="centerY" secondItem="Z1z-yl-0IY" secondAttribute="centerY" id="O1I-OJ-72T"/>
                                             <constraint firstItem="zNz-kU-sXa" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="OeY-d7-FDf"/>
@@ -811,9 +795,7 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                             <constraint firstItem="tZP-ie-2aJ" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="Vma-b3-ZRv"/>
                                             <constraint firstAttribute="trailing" secondItem="hDt-xT-I9o" secondAttribute="trailing" constant="16" id="Vpd-1d-hob"/>
                                             <constraint firstItem="qJl-VV-2wc" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="YKD-KM-J2M"/>
-                                            <constraint firstItem="Oya-Qh-t1d" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="ZQW-Hl-cMz"/>
                                             <constraint firstItem="bST-Th-ThQ" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="aRG-0G-VCr"/>
-                                            <constraint firstItem="Oya-Qh-t1d" firstAttribute="top" secondItem="aUp-NX-8ya" secondAttribute="top" id="b2i-bI-iEe"/>
                                             <constraint firstItem="2XL-wm-xlp" firstAttribute="top" secondItem="zNz-kU-sXa" secondAttribute="bottom" constant="30" id="dw8-1k-mw2"/>
                                             <constraint firstAttribute="bottom" secondItem="WVd-JL-v0D" secondAttribute="bottom" constant="20" id="eCG-0a-jcD"/>
                                             <constraint firstAttribute="trailing" secondItem="qFS-pr-Xxe" secondAttribute="trailing" constant="16" id="eqS-WE-9iJ"/>
@@ -821,15 +803,15 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                             <constraint firstItem="hDt-xT-I9o" firstAttribute="centerY" secondItem="2XL-wm-xlp" secondAttribute="centerY" id="fKm-Vr-wNn"/>
                                             <constraint firstItem="WVd-JL-v0D" firstAttribute="leading" secondItem="6O5-29-Xby" secondAttribute="trailing" constant="20" id="hy2-Vj-Qit"/>
                                             <constraint firstItem="XqK-Mt-fNQ" firstAttribute="centerY" secondItem="fAI-Io-2a4" secondAttribute="centerY" id="ibV-TX-6AW"/>
+                                            <constraint firstItem="tZP-ie-2aJ" firstAttribute="top" secondItem="aUp-NX-8ya" secondAttribute="top" id="jCq-4w-X7W"/>
                                             <constraint firstItem="Rg3-Io-Ebi" firstAttribute="leading" secondItem="WZ6-Q8-EhL" secondAttribute="trailing" constant="20" id="jcL-9o-tFo"/>
+                                            <constraint firstItem="qFS-pr-Xxe" firstAttribute="top" secondItem="XqK-Mt-fNQ" secondAttribute="bottom" constant="10" id="kWY-Ii-gsw"/>
                                             <constraint firstItem="LAW-z7-TmE" firstAttribute="centerY" secondItem="zNz-kU-sXa" secondAttribute="centerY" id="lGO-Vr-zQM"/>
                                             <constraint firstAttribute="trailing" secondItem="8mM-AO-cM3" secondAttribute="trailing" constant="16" id="m5Z-U9-bgh"/>
-                                            <constraint firstItem="tZP-ie-2aJ" firstAttribute="top" secondItem="Oya-Qh-t1d" secondAttribute="bottom" constant="5" id="mHl-1S-dLV"/>
                                             <constraint firstAttribute="trailing" secondItem="WVd-JL-v0D" secondAttribute="trailing" constant="16" id="pMx-RZ-Yss"/>
                                             <constraint firstItem="kXl-Yi-EoV" firstAttribute="leading" secondItem="FAy-mv-9od" secondAttribute="trailing" constant="20" id="r60-o8-90l"/>
                                             <constraint firstItem="zNz-kU-sXa" firstAttribute="top" secondItem="qFS-pr-Xxe" secondAttribute="bottom" constant="30" id="rQ8-gj-9U1"/>
                                             <constraint firstItem="fma-8C-D4h" firstAttribute="leading" secondItem="qJl-VV-2wc" secondAttribute="trailing" constant="20" id="rS1-Mc-HRb"/>
-                                            <constraint firstAttribute="trailing" secondItem="UeA-Uu-6uI" secondAttribute="trailing" constant="16" id="rf1-CB-mRK"/>
                                             <constraint firstItem="WVd-JL-v0D" firstAttribute="centerY" secondItem="6O5-29-Xby" secondAttribute="centerY" id="ruS-oL-v9d"/>
                                             <constraint firstAttribute="trailing" secondItem="8nL-xd-3C1" secondAttribute="trailing" constant="16" id="ui0-bu-OHZ"/>
                                             <constraint firstItem="qFS-pr-Xxe" firstAttribute="leading" secondItem="aUp-NX-8ya" secondAttribute="leading" constant="16" id="vZ9-vq-Wdu"/>
@@ -891,17 +873,17 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
             <objects>
                 <viewController title="Experiences" id="ah3-rc-AGB" customClass="ExperiencesViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FXa-dd-JsE">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the last ten years, how many years of skilled work experience in Canada do you have?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irp-3y-Rs5">
-                                <rect key="frame" x="16" y="140" width="358" height="61"/>
+                                <rect key="frame" x="16" y="140" width="396" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIk-Cy-9xR">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="RMP-rj-Hh6"/>
@@ -921,7 +903,7 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JI2-c8-MQQ">
-                                <rect key="frame" x="16" y="206" width="358" height="117"/>
+                                <rect key="frame" x="16" y="185.66666666666666" width="396" height="116.99999999999997"/>
                                 <string key="text">It must have been paid and full-time (or an equal amount in part-time).
 "Skilled work" in the NOC is:
 - Managerial jobs (NOC Skill Level 0)
@@ -932,37 +914,37 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="BOq-ES-C60">
-                                <rect key="frame" x="280" y="327" width="94" height="32"/>
+                                <rect key="frame" x="318" y="306.66666666666669" width="94" height="32"/>
                                 <connections>
                                     <action selector="canadianExChanged:" destination="ah3-rc-AGB" eventType="valueChanged" id="hxv-BD-1Yv"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvn-ig-eOS">
-                                <rect key="frame" x="16" y="343" width="244" height="0.0"/>
+                                <rect key="frame" x="16" y="322.66666666666669" width="282" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the last 10 years, how many total years of foreign skilled work experience do you have?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXd-Ld-Rh7">
-                                <rect key="frame" x="16" y="389" width="358" height="61"/>
+                                <rect key="frame" x="16" y="368.66666666666669" width="396" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It must have been paid, full-time (or an equal amount in part-time), and in only one occupation (NOC skill type 0, A or B)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUd-9Z-rBZ">
-                                <rect key="frame" x="16" y="455" width="358" height="50.333333333333314"/>
+                                <rect key="frame" x="16" y="414.33333333333331" width="396" height="33.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="7ca-q8-gZk">
-                                <rect key="frame" x="280" y="509.33333333333326" width="94" height="32"/>
+                                <rect key="frame" x="318" y="452" width="94" height="32"/>
                                 <connections>
                                     <action selector="foreignExChanged:" destination="ah3-rc-AGB" eventType="valueChanged" id="rhJ-gq-BrP"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qN-YW-XiX">
-                                <rect key="frame" x="16" y="525.33333333333337" width="244" height="0.0"/>
+                                <rect key="frame" x="16" y="468" width="282" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1015,11 +997,11 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
             <objects>
                 <viewController title="Others" id="Vr5-CG-G8p" customClass="OthersViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nxq-jP-dKY">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laM-Ob-Bqb">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="qY4-0d-bUu"/>
@@ -1038,79 +1020,78 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
                                     <segue destination="AZB-MI-ELz" kind="show" identifier="otherToFamily" id="IgJ-Vc-3De"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmU-w6-tD0">
-                                <rect key="frame" x="0.0" y="140" width="390" height="590"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switchA" translatesAutoresizingMaskIntoConstraints="NO" id="Hx5-sS-25t">
+                                <rect key="frame" x="363" y="155" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="tLd-jb-0Uy"/>
+                                </constraints>
+                                <color key="onTintColor" name="Blue"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have a certificate of qualification from a Canadian province, territory or federal body?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJV-EY-xDZ">
+                                <rect key="frame" x="16" y="140" width="331" height="61"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3D-NR-fcC">
+                                <rect key="frame" x="16" y="206" width="396" height="83.666666666666686"/>
+                                <string key="text">Note: A certificate of qualification lets people work in some skilled trades in Canada. Only the provinces, territories and a federal body can issue these certificates. To get one, a person must have them assess their training, trade experience and skills to and then pass a certification exam.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switchB" translatesAutoresizingMaskIntoConstraints="NO" id="smu-CB-ByF">
+                                <rect key="frame" x="363" y="314.66666666666669" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="Ec0-Fi-3yo"/>
+                                </constraints>
+                                <color key="onTintColor" name="Blue"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have a nomination certificate from a province or territory?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFG-7n-yGY">
+                                <rect key="frame" x="16" y="309.66666666666669" width="331" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switchB" translatesAutoresizingMaskIntoConstraints="NO" id="Dvi-eU-HwW">
+                                <rect key="frame" x="363" y="375.33333333333331" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="qqT-Jc-I25"/>
+                                </constraints>
+                                <color key="onTintColor" name="Blue"/>
+                                <connections>
+                                    <action selector="haveJobOfferChanged:" destination="Vr5-CG-G8p" eventType="valueChanged" id="jx0-5O-gsL"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have a valid job offer supported by a LMIA?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-gD-mhp">
+                                <rect key="frame" x="16" y="370.33333333333331" width="331" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which NOC skill type or level is the job offer?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYS-eA-M0P">
+                                <rect key="frame" x="16" y="740.66666666666663" width="396" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4y9-pr-3B3">
+                                <rect key="frame" x="16" y="771" width="396" height="32"/>
+                                <segments>
+                                    <segment title="Type OO"/>
+                                    <segment title="Type A, B or O"/>
+                                    <segment title="Type C or D"/>
+                                </segments>
+                            </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvE-ib-M2L">
+                                <rect key="frame" x="0.0" y="416" width="428" height="314.66666666666674"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJA-3s-5wU">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="662"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switchA" translatesAutoresizingMaskIntoConstraints="NO" id="PhO-QA-V1m">
-                                        <rect key="frame" x="325" y="15" width="51" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="49" id="mzh-br-Vcg"/>
-                                        </constraints>
-                                        <color key="onTintColor" name="Blue"/>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have a certificate of qualification from a Canadian province, territory or federal body?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pv-9i-aOR">
-                                        <rect key="frame" x="16" y="0.0" width="289" height="61"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switchB" translatesAutoresizingMaskIntoConstraints="NO" id="dSM-26-MFT">
-                                        <rect key="frame" x="325" y="211.33333333333331" width="51" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="49" id="EWF-uq-PCS"/>
-                                        </constraints>
-                                        <color key="onTintColor" name="Blue"/>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have a nomination certificate from a province or territory?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66B-4C-TOO">
-                                        <rect key="frame" x="16" y="196.33333333333331" width="289" height="61"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switchB" translatesAutoresizingMaskIntoConstraints="NO" id="nDj-fF-xMz">
-                                        <rect key="frame" x="325" y="292.33333333333331" width="51" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="49" id="2d4-i4-fwX"/>
-                                        </constraints>
-                                        <color key="onTintColor" name="Blue"/>
-                                        <connections>
-                                            <action selector="haveJobOfferChanged:" destination="Vr5-CG-G8p" eventType="valueChanged" id="POo-cS-iFT"/>
-                                        </connections>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have a valid job offer supported by a LMIA?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmR-8q-MOW">
-                                        <rect key="frame" x="16" y="287.33333333333331" width="289" height="40.666666666666686"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which NOC skill type or level is the job offer?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3h-g2-HAV">
-                                        <rect key="frame" x="16" y="560.33333333333337" width="358" height="40.666666666666629"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LiO-L9-Jk1">
-                                        <rect key="frame" x="16" y="611" width="358" height="32"/>
-                                        <segments>
-                                            <segment title="Type OO"/>
-                                            <segment title="Type A, B or O"/>
-                                            <segment title="Type C or D"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtK-VI-flo">
-                                        <rect key="frame" x="16" y="66" width="358" height="100.33333333333331"/>
-                                        <string key="text">Note: A certificate of qualification lets people work in some skilled trades in Canada. Only the provinces, territories and a federal body can issue these certificates. To get one, a person must have them assess their training, trade experience and skills to and then pass a certification exam.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgD-h5-0by">
-                                        <rect key="frame" x="16" y="333" width="358" height="217.33333333333337"/>
-                                        <string key="text">A valid job offer must be:
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVa-FU-NoP">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="200.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIL-lp-gLH">
+                                                <rect key="frame" x="16" y="0.0" width="396" height="200.66666666666666"/>
+                                                <string key="text">A valid job offer must be:
 - Full-time
 - In a skilled job listed as Skill Type O, or Skill Level A or B in the 2011 National Occupational Classification
 - Supported by a Labour Market Impact Assessment (LMIA) or exempt from needing one
@@ -1118,94 +1099,99 @@ Note: a Canadian degree, diploma or certificate must either have been earned at 
  A job offer isn’t valid if your employer is:
 - An embassy, high commission or consulate in Canada or
 - On the list of ineligible employers.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="VIL-lp-gLH" secondAttribute="trailing" constant="16" id="7Kz-of-Lyj"/>
+                                            <constraint firstItem="VIL-lp-gLH" firstAttribute="leading" secondItem="IVa-FU-NoP" secondAttribute="leading" constant="16" id="UG8-jd-NI0"/>
+                                            <constraint firstItem="VIL-lp-gLH" firstAttribute="top" secondItem="IVa-FU-NoP" secondAttribute="top" id="d2f-Dg-Jfo"/>
+                                            <constraint firstAttribute="bottom" secondItem="VIL-lp-gLH" secondAttribute="bottom" id="iwd-Qb-yLG"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="dSM-26-MFT" firstAttribute="leading" secondItem="66B-4C-TOO" secondAttribute="trailing" constant="20" id="0Cd-jD-puI"/>
-                                    <constraint firstAttribute="trailing" secondItem="dSM-26-MFT" secondAttribute="trailing" constant="16" id="0f3-RC-Y6l"/>
-                                    <constraint firstAttribute="trailing" secondItem="nDj-fF-xMz" secondAttribute="trailing" constant="16" id="6rG-4J-jjY"/>
-                                    <constraint firstItem="3pv-9i-aOR" firstAttribute="top" secondItem="OmU-w6-tD0" secondAttribute="top" id="8B8-kf-lLM"/>
-                                    <constraint firstItem="kgD-h5-0by" firstAttribute="leading" secondItem="OmU-w6-tD0" secondAttribute="leading" constant="16" id="8Ux-Sf-xrv"/>
-                                    <constraint firstItem="LiO-L9-Jk1" firstAttribute="top" secondItem="B3h-g2-HAV" secondAttribute="bottom" constant="10" id="Bam-EN-lei"/>
-                                    <constraint firstItem="xtK-VI-flo" firstAttribute="top" secondItem="3pv-9i-aOR" secondAttribute="bottom" constant="5" id="Db6-nl-qKy"/>
-                                    <constraint firstItem="66B-4C-TOO" firstAttribute="centerY" secondItem="dSM-26-MFT" secondAttribute="centerY" id="JeU-Kz-Mku"/>
-                                    <constraint firstItem="3pv-9i-aOR" firstAttribute="centerY" secondItem="PhO-QA-V1m" secondAttribute="centerY" id="LsV-H4-2qr"/>
-                                    <constraint firstItem="66B-4C-TOO" firstAttribute="top" secondItem="xtK-VI-flo" secondAttribute="bottom" constant="30" id="NjG-ZD-z7u"/>
-                                    <constraint firstItem="kgD-h5-0by" firstAttribute="top" secondItem="jmR-8q-MOW" secondAttribute="bottom" constant="5" id="PCx-fP-9GY"/>
-                                    <constraint firstAttribute="trailing" secondItem="qJA-3s-5wU" secondAttribute="trailing" id="Q4h-Zs-fZ0"/>
-                                    <constraint firstItem="LiO-L9-Jk1" firstAttribute="leading" secondItem="OmU-w6-tD0" secondAttribute="leading" constant="16" id="QrR-f9-XR3"/>
-                                    <constraint firstItem="B3h-g2-HAV" firstAttribute="top" secondItem="kgD-h5-0by" secondAttribute="bottom" constant="10" id="Qyc-Nm-RJO"/>
-                                    <constraint firstAttribute="trailing" secondItem="xtK-VI-flo" secondAttribute="trailing" constant="16" id="Rk4-9r-4RV"/>
-                                    <constraint firstItem="jmR-8q-MOW" firstAttribute="leading" secondItem="OmU-w6-tD0" secondAttribute="leading" constant="16" id="Ssc-Hw-nXN"/>
-                                    <constraint firstAttribute="bottom" secondItem="LiO-L9-Jk1" secondAttribute="bottom" constant="20" id="T9O-ve-Ikm"/>
-                                    <constraint firstItem="qJA-3s-5wU" firstAttribute="top" secondItem="OmU-w6-tD0" secondAttribute="top" id="bUh-RB-A7q"/>
-                                    <constraint firstItem="nDj-fF-xMz" firstAttribute="leading" secondItem="jmR-8q-MOW" secondAttribute="trailing" constant="20" id="cwa-An-Xle"/>
-                                    <constraint firstItem="PhO-QA-V1m" firstAttribute="leading" secondItem="3pv-9i-aOR" secondAttribute="trailing" constant="20" id="cyo-ga-7ja"/>
-                                    <constraint firstItem="B3h-g2-HAV" firstAttribute="leading" secondItem="OmU-w6-tD0" secondAttribute="leading" constant="16" id="dn2-Jy-OHM"/>
-                                    <constraint firstItem="xtK-VI-flo" firstAttribute="leading" secondItem="OmU-w6-tD0" secondAttribute="leading" constant="16" id="ffB-Nl-Rho"/>
-                                    <constraint firstItem="qJA-3s-5wU" firstAttribute="leading" secondItem="OmU-w6-tD0" secondAttribute="leading" id="g4m-dt-HAB"/>
-                                    <constraint firstAttribute="trailing" secondItem="LiO-L9-Jk1" secondAttribute="trailing" constant="16" id="jN6-w6-jbb"/>
-                                    <constraint firstItem="jmR-8q-MOW" firstAttribute="top" secondItem="66B-4C-TOO" secondAttribute="bottom" constant="30" id="kt3-FC-mRS"/>
-                                    <constraint firstItem="66B-4C-TOO" firstAttribute="leading" secondItem="OmU-w6-tD0" secondAttribute="leading" constant="16" id="lfF-cl-ZVP"/>
-                                    <constraint firstAttribute="trailing" secondItem="PhO-QA-V1m" secondAttribute="trailing" constant="16" id="rYI-L4-iAW"/>
-                                    <constraint firstAttribute="trailing" secondItem="B3h-g2-HAV" secondAttribute="trailing" constant="16" id="uBu-0q-mdg"/>
-                                    <constraint firstAttribute="trailing" secondItem="kgD-h5-0by" secondAttribute="trailing" constant="16" id="uTZ-61-di7"/>
-                                    <constraint firstItem="3pv-9i-aOR" firstAttribute="leading" secondItem="OmU-w6-tD0" secondAttribute="leading" constant="16" id="vYG-La-Xds"/>
-                                    <constraint firstAttribute="bottom" secondItem="qJA-3s-5wU" secondAttribute="bottom" id="vnE-qV-qYw"/>
-                                    <constraint firstItem="jmR-8q-MOW" firstAttribute="centerY" secondItem="nDj-fF-xMz" secondAttribute="centerY" id="wxo-WR-75W"/>
+                                    <constraint firstAttribute="bottom" secondItem="IVa-FU-NoP" secondAttribute="bottom" id="BNc-NH-fPg"/>
+                                    <constraint firstItem="IVa-FU-NoP" firstAttribute="leading" secondItem="tvE-ib-M2L" secondAttribute="leading" id="HOd-rG-atV"/>
+                                    <constraint firstItem="IVa-FU-NoP" firstAttribute="width" secondItem="tvE-ib-M2L" secondAttribute="width" id="cPC-n2-814"/>
+                                    <constraint firstItem="IVa-FU-NoP" firstAttribute="top" secondItem="tvE-ib-M2L" secondAttribute="top" id="fUu-CQ-dbB"/>
+                                    <constraint firstAttribute="trailing" secondItem="IVa-FU-NoP" secondAttribute="trailing" id="sdj-dQ-KUB"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ccq-Fu-iWn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qJA-3s-5wU" firstAttribute="width" secondItem="Nxq-jP-dKY" secondAttribute="width" id="01T-WU-VC0"/>
-                            <constraint firstItem="ccq-Fu-iWn" firstAttribute="trailing" secondItem="OmU-w6-tD0" secondAttribute="trailing" id="GQX-Fs-U6h"/>
-                            <constraint firstItem="OmU-w6-tD0" firstAttribute="leading" secondItem="ccq-Fu-iWn" secondAttribute="leading" id="GSx-iy-fLk"/>
-                            <constraint firstItem="OmU-w6-tD0" firstAttribute="top" secondItem="ccq-Fu-iWn" secondAttribute="top" id="IIN-9o-qzH"/>
+                            <constraint firstItem="tvE-ib-M2L" firstAttribute="leading" secondItem="ccq-Fu-iWn" secondAttribute="leading" id="0T2-Ls-PuZ"/>
+                            <constraint firstItem="S1t-gD-mhp" firstAttribute="centerY" secondItem="Dvi-eU-HwW" secondAttribute="centerY" id="2Op-mP-Td4"/>
+                            <constraint firstItem="ccq-Fu-iWn" firstAttribute="trailing" secondItem="E3D-NR-fcC" secondAttribute="trailing" constant="16" id="3NY-GW-8CG"/>
+                            <constraint firstItem="OFG-7n-yGY" firstAttribute="leading" secondItem="ccq-Fu-iWn" secondAttribute="leading" constant="16" id="3xF-I6-yMl"/>
+                            <constraint firstItem="4y9-pr-3B3" firstAttribute="leading" secondItem="ccq-Fu-iWn" secondAttribute="leading" constant="16" id="4Zk-Jl-cn5"/>
+                            <constraint firstItem="laM-Ob-Bqb" firstAttribute="top" secondItem="4y9-pr-3B3" secondAttribute="bottom" constant="30" id="75c-43-B3A"/>
+                            <constraint firstItem="Dvi-eU-HwW" firstAttribute="leading" secondItem="S1t-gD-mhp" secondAttribute="trailing" constant="16" id="7YL-5W-fSH"/>
+                            <constraint firstItem="MYS-eA-M0P" firstAttribute="top" secondItem="tvE-ib-M2L" secondAttribute="bottom" constant="10" id="9ra-AD-hwY"/>
+                            <constraint firstItem="OFG-7n-yGY" firstAttribute="top" secondItem="E3D-NR-fcC" secondAttribute="bottom" constant="20" id="CAE-pr-PTM"/>
+                            <constraint firstItem="smu-CB-ByF" firstAttribute="leading" secondItem="OFG-7n-yGY" secondAttribute="trailing" constant="16" id="H3s-0l-yIW"/>
+                            <constraint firstItem="E3D-NR-fcC" firstAttribute="top" secondItem="lJV-EY-xDZ" secondAttribute="bottom" constant="5" id="HTt-Ws-mLZ"/>
+                            <constraint firstItem="tvE-ib-M2L" firstAttribute="top" secondItem="S1t-gD-mhp" secondAttribute="bottom" constant="5" id="Inx-AI-yJ7"/>
                             <constraint firstItem="laM-Ob-Bqb" firstAttribute="leading" secondItem="ccq-Fu-iWn" secondAttribute="leading" constant="16" id="L7h-nV-bLJ"/>
+                            <constraint firstItem="S1t-gD-mhp" firstAttribute="leading" secondItem="Nxq-jP-dKY" secondAttribute="leading" constant="16" id="Ml0-nz-Eug"/>
+                            <constraint firstItem="ccq-Fu-iWn" firstAttribute="trailing" secondItem="MYS-eA-M0P" secondAttribute="trailing" constant="16" id="NoS-ks-2a6"/>
+                            <constraint firstItem="tvE-ib-M2L" firstAttribute="trailing" secondItem="ccq-Fu-iWn" secondAttribute="trailing" id="Qsh-te-Gqh"/>
+                            <constraint firstItem="S1t-gD-mhp" firstAttribute="top" secondItem="OFG-7n-yGY" secondAttribute="bottom" constant="20" id="S49-sV-Dpl"/>
+                            <constraint firstItem="MYS-eA-M0P" firstAttribute="leading" secondItem="ccq-Fu-iWn" secondAttribute="leading" constant="16" id="Tbx-RO-aGy"/>
+                            <constraint firstItem="ccq-Fu-iWn" firstAttribute="trailing" secondItem="Dvi-eU-HwW" secondAttribute="trailing" constant="16" id="YOw-BR-9zV"/>
                             <constraint firstItem="ccq-Fu-iWn" firstAttribute="trailing" secondItem="laM-Ob-Bqb" secondAttribute="trailing" constant="16" id="YV5-yt-oyg"/>
+                            <constraint firstAttribute="trailing" secondItem="Hx5-sS-25t" secondAttribute="trailing" constant="16" id="ZrF-Wi-GxF"/>
+                            <constraint firstItem="Hx5-sS-25t" firstAttribute="leading" secondItem="lJV-EY-xDZ" secondAttribute="trailing" constant="16" id="cSI-V4-SBJ"/>
+                            <constraint firstItem="ccq-Fu-iWn" firstAttribute="trailing" secondItem="4y9-pr-3B3" secondAttribute="trailing" constant="16" id="gdo-Pt-sop"/>
+                            <constraint firstItem="lJV-EY-xDZ" firstAttribute="leading" secondItem="ccq-Fu-iWn" secondAttribute="leading" constant="16" id="i7X-xG-fLl"/>
+                            <constraint firstAttribute="trailing" secondItem="smu-CB-ByF" secondAttribute="trailing" constant="16" id="jut-p6-jwv"/>
                             <constraint firstItem="ccq-Fu-iWn" firstAttribute="bottom" secondItem="laM-Ob-Bqb" secondAttribute="bottom" constant="20" id="lPd-Ge-MUc"/>
-                            <constraint firstItem="laM-Ob-Bqb" firstAttribute="top" secondItem="OmU-w6-tD0" secondAttribute="bottom" constant="20" id="mun-m1-LX5"/>
+                            <constraint firstItem="E3D-NR-fcC" firstAttribute="leading" secondItem="ccq-Fu-iWn" secondAttribute="leading" constant="16" id="lfY-mA-ahF"/>
+                            <constraint firstItem="OFG-7n-yGY" firstAttribute="centerY" secondItem="smu-CB-ByF" secondAttribute="centerY" id="ll0-Y1-dDg"/>
+                            <constraint firstItem="4y9-pr-3B3" firstAttribute="top" secondItem="MYS-eA-M0P" secondAttribute="bottom" constant="10" id="t2G-UR-vjv"/>
+                            <constraint firstItem="lJV-EY-xDZ" firstAttribute="centerY" secondItem="Hx5-sS-25t" secondAttribute="centerY" id="wXW-HK-vXj"/>
+                            <constraint firstItem="lJV-EY-xDZ" firstAttribute="top" secondItem="ccq-Fu-iWn" secondAttribute="top" id="yO8-3F-OYq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Others" id="3S4-Gd-GNA"/>
                     <connections>
-                        <outlet property="haveCertificate" destination="PhO-QA-V1m" id="c0y-UT-SVN"/>
-                        <outlet property="haveJobOffer" destination="nDj-fF-xMz" id="5ZP-oq-3Qj"/>
-                        <outlet property="haveNomination" destination="dSM-26-MFT" id="7HE-rM-rGr"/>
-                        <outlet property="nocLabel" destination="B3h-g2-HAV" id="dPk-6U-ZQo"/>
-                        <outlet property="nocSegmentedControl" destination="LiO-L9-Jk1" id="qJB-g7-iIX"/>
+                        <outlet property="haveCertificate" destination="Hx5-sS-25t" id="eJk-zt-VsL"/>
+                        <outlet property="haveJobOffer" destination="Dvi-eU-HwW" id="vrX-ax-r57"/>
+                        <outlet property="haveNomination" destination="smu-CB-ByF" id="5U9-DP-Axq"/>
+                        <outlet property="nocLabel" destination="MYS-eA-M0P" id="Oaz-Er-Vj3"/>
+                        <outlet property="nocSegmentedControl" destination="4y9-pr-3B3" id="RMW-51-Whx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KT-8w-ENe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6197.6000000000004" y="49.50738916256158"/>
+            <point key="canvasLocation" x="6196.9230769230771" y="49.052132701421797"/>
         </scene>
         <!--Canadian Family-->
         <scene sceneID="hnd-bT-mMC">
             <objects>
                 <viewController id="AZB-MI-ELz" customClass="CanadianFamilyViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ak2-Pe-ceX">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switchA" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-Sg-SgF">
-                                <rect key="frame" x="325" y="185.66666666666666" width="51" height="31"/>
+                                <rect key="frame" x="363" y="175.33333333333334" width="51" height="31"/>
                                 <color key="onTintColor" name="Blue"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akS-mw-V3l">
-                                <rect key="frame" x="16" y="140" width="289" height="122"/>
+                                <rect key="frame" x="16" y="140" width="331" height="101.66666666666669"/>
                                 <string key="text">Do you or your spouse or common law partner (if they will come with you to Canada) have at least one brother or sister living in Canada who is a citizen or permanent resident?</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkL-Qj-8KM">
-                                <rect key="frame" x="16" y="267" width="358" height="167.33333333333337"/>
+                                <rect key="frame" x="16" y="246.66666666666663" width="396" height="167.33333333333337"/>
                                 <string key="text">Note: to answer yes, the brother or sister must be:
 - 18 years old or older
 - Related to you or your partner by blood, marriage, common-law partnership or adoption
@@ -1220,7 +1206,7 @@ A brother or sister is related to you by:
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL3-WQ-SI0">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="P28-Wm-WOr"/>
@@ -1245,7 +1231,7 @@ A brother or sister is related to you by:
                             <constraint firstItem="akS-mw-V3l" firstAttribute="leading" secondItem="cHa-yr-vTG" secondAttribute="leading" constant="16" id="1sl-vC-t2J"/>
                             <constraint firstItem="akS-mw-V3l" firstAttribute="top" secondItem="cHa-yr-vTG" secondAttribute="top" id="5W4-Kf-vmV"/>
                             <constraint firstItem="cHa-yr-vTG" firstAttribute="trailing" secondItem="FkL-Qj-8KM" secondAttribute="trailing" constant="16" id="P1g-n6-uHa"/>
-                            <constraint firstItem="eQm-Sg-SgF" firstAttribute="leading" secondItem="akS-mw-V3l" secondAttribute="trailing" constant="20" id="RsH-yI-RDF"/>
+                            <constraint firstItem="eQm-Sg-SgF" firstAttribute="leading" secondItem="akS-mw-V3l" secondAttribute="trailing" constant="16" id="RsH-yI-RDF"/>
                             <constraint firstItem="dL3-WQ-SI0" firstAttribute="leading" secondItem="cHa-yr-vTG" secondAttribute="leading" constant="16" id="Y1t-24-jvl"/>
                             <constraint firstItem="akS-mw-V3l" firstAttribute="centerY" secondItem="eQm-Sg-SgF" secondAttribute="centerY" id="ao9-GR-OAv"/>
                             <constraint firstItem="cHa-yr-vTG" firstAttribute="trailing" secondItem="dL3-WQ-SI0" secondAttribute="trailing" constant="16" id="e6S-Ii-xbT"/>
@@ -1271,11 +1257,11 @@ A brother or sister is related to you by:
             <objects>
                 <viewController title="PartnerInfo" id="YlV-PJ-uXN" customClass="PartnerInfoViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BN3-BA-D4H">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcz-R6-8qT">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="x0I-ew-0n3"/>
@@ -1295,14 +1281,14 @@ A brother or sister is related to you by:
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkf-Pw-8JL">
-                                <rect key="frame" x="0.0" y="140" width="390" height="590"/>
+                                <rect key="frame" x="0.0" y="140" width="428" height="672"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Dx-Gf-6WJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="641.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="621.33333333333337"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switchA" translatesAutoresizingMaskIntoConstraints="NO" id="kPD-ab-p8o">
-                                        <rect key="frame" x="325" y="399" width="51" height="31"/>
+                                        <rect key="frame" x="363" y="378.66666666666663" width="51" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="49" id="rKQ-85-N1h"/>
                                         </constraints>
@@ -1312,67 +1298,67 @@ A brother or sister is related to you by:
                                         </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5w-KV-h0R">
-                                        <rect key="frame" x="16" y="348" width="244" height="0.0"/>
+                                        <rect key="frame" x="16" y="327.66666666666669" width="282" height="0.0"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="zcU-zf-9fH">
-                                        <rect key="frame" x="280" y="559.66666666666663" width="94" height="32"/>
+                                        <rect key="frame" x="318" y="539.33333333333337" width="94" height="32"/>
                                         <connections>
                                             <action selector="readingChanged:" destination="YlV-PJ-uXN" eventType="valueChanged" id="zKq-cE-mq3"/>
                                         </connections>
                                     </stepper>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-C0-Dmp">
-                                        <rect key="frame" x="280" y="529.66666666666663" width="94" height="32"/>
+                                        <rect key="frame" x="318" y="509.33333333333337" width="94" height="32"/>
                                         <connections>
                                             <action selector="listeningChanged:" destination="YlV-PJ-uXN" eventType="valueChanged" id="Vlt-sO-4fr"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the last ten years, how many years of skilled work experience in Canada does your spouse/common-law partner have?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYc-ge-ZAC">
-                                        <rect key="frame" x="16" y="261" width="358" height="61"/>
+                                        <rect key="frame" x="16" y="240.66666666666669" width="396" height="61"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxh-Vb-Bwr">
-                                        <rect key="frame" x="0.0" y="71" width="390" height="160"/>
+                                        <rect key="frame" x="0.0" y="50.666666666666657" width="428" height="160"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="160" id="11k-se-xLv"/>
                                         </constraints>
                                     </pickerView>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="14T-gw-e2h">
-                                        <rect key="frame" x="280" y="499.66666666666663" width="94" height="32"/>
+                                        <rect key="frame" x="318" y="479.33333333333337" width="94" height="32"/>
                                         <connections>
                                             <action selector="speakingChanged:" destination="YlV-PJ-uXN" eventType="valueChanged" id="oZu-jx-jwc"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb3-db-Wdg">
-                                        <rect key="frame" x="16" y="575.66666666666663" width="244" height="0.0"/>
+                                        <rect key="frame" x="16" y="555.33333333333337" width="282" height="0.0"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did your spouse or common-law partner take a language test?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqE-CU-qe2">
-                                        <rect key="frame" x="16" y="394" width="289" height="40.666666666666686"/>
+                                        <rect key="frame" x="16" y="373.66666666666663" width="331" height="40.666666666666686"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the highest level of education for which your spouse or common-law partner's has?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZd-QA-w1m">
-                                        <rect key="frame" x="16" y="0.0" width="358" height="61"/>
+                                        <rect key="frame" x="16" y="0.0" width="396" height="40.666666666666664"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbY-5D-5HA">
-                                        <rect key="frame" x="16" y="545.66666666666663" width="244" height="0.0"/>
+                                        <rect key="frame" x="16" y="525.33333333333337" width="282" height="0.0"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Sxm-dT-sx3">
-                                        <rect key="frame" x="16" y="454.66666666666663" width="358" height="32"/>
+                                        <rect key="frame" x="16" y="434.33333333333337" width="396" height="32"/>
                                         <segments>
                                             <segment title="CELPIP"/>
                                             <segment title="IELTS"/>
@@ -1384,25 +1370,25 @@ A brother or sister is related to you by:
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaw-Kj-ALM">
-                                        <rect key="frame" x="16" y="515.66666666666663" width="244" height="0.0"/>
+                                        <rect key="frame" x="16" y="495.33333333333337" width="282" height="0.0"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="7Ix-wW-995">
-                                        <rect key="frame" x="280" y="589.66666666666663" width="94" height="32"/>
+                                        <rect key="frame" x="318" y="569.33333333333337" width="94" height="32"/>
                                         <connections>
                                             <action selector="writingChanged:" destination="YlV-PJ-uXN" eventType="valueChanged" id="Ozd-UC-cYE"/>
                                         </connections>
                                     </stepper>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="E7V-pv-T9u">
-                                        <rect key="frame" x="280" y="332" width="94" height="32"/>
+                                        <rect key="frame" x="318" y="311.66666666666669" width="94" height="32"/>
                                         <connections>
                                             <action selector="partnerExChanged:" destination="YlV-PJ-uXN" eventType="valueChanged" id="L1c-n4-nz2"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nb3-YL-YCW">
-                                        <rect key="frame" x="16" y="605.66666666666663" width="244" height="0.0"/>
+                                        <rect key="frame" x="16" y="585.33333333333337" width="282" height="0.0"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1427,7 +1413,7 @@ A brother or sister is related to you by:
                                     <constraint firstItem="Nb3-YL-YCW" firstAttribute="leading" secondItem="jkf-Pw-8JL" secondAttribute="leading" constant="16" id="Jfs-Dy-VVz"/>
                                     <constraint firstItem="2Dx-Gf-6WJ" firstAttribute="top" secondItem="jkf-Pw-8JL" secondAttribute="top" id="K4l-8k-nQu"/>
                                     <constraint firstAttribute="trailing" secondItem="Sxm-dT-sx3" secondAttribute="trailing" constant="16" id="Mh1-Hh-Sl4"/>
-                                    <constraint firstItem="kPD-ab-p8o" firstAttribute="leading" secondItem="QqE-CU-qe2" secondAttribute="trailing" constant="20" id="O8L-uX-Bvm"/>
+                                    <constraint firstItem="kPD-ab-p8o" firstAttribute="leading" secondItem="QqE-CU-qe2" secondAttribute="trailing" constant="16" id="O8L-uX-Bvm"/>
                                     <constraint firstItem="E7V-pv-T9u" firstAttribute="top" secondItem="IYc-ge-ZAC" secondAttribute="bottom" constant="10" id="RUc-0d-8UF"/>
                                     <constraint firstItem="Sxm-dT-sx3" firstAttribute="leading" secondItem="jkf-Pw-8JL" secondAttribute="leading" constant="16" id="Tpo-yx-6HI"/>
                                     <constraint firstAttribute="trailing" secondItem="14T-gw-e2h" secondAttribute="trailing" constant="16" id="Ty7-W3-U4U"/>
@@ -1498,11 +1484,11 @@ A brother or sister is related to you by:
             <objects>
                 <viewController title="Result" id="Uwt-ks-XeC" customClass="ResultViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RgN-Qc-X5t">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snb-fB-oOr">
-                                <rect key="frame" x="16" y="750" width="358" height="40"/>
+                                <rect key="frame" x="16" y="832" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="FMC-Qn-ZkP"/>
@@ -1522,157 +1508,157 @@ A brother or sister is related to you by:
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94F-u0-ssf">
-                                <rect key="frame" x="195" y="140" width="0.0" height="0.0"/>
+                                <rect key="frame" x="214" y="140" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <color key="textColor" name="Blue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1E-zk-hmp">
-                                <rect key="frame" x="0.0" y="150" width="390" height="580"/>
+                                <rect key="frame" x="0.0" y="150" width="428" height="662"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWq-tw-LM0">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="580.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="564"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Core/Human capital factors: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lM-Ru-Apg">
-                                                <rect key="frame" x="16" y="0.0" width="358" height="21"/>
+                                                <rect key="frame" x="16" y="0.0" width="396" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" name="Blue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hj-im-Pw3">
-                                                <rect key="frame" x="16" y="24" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="24" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level of education: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ge-Hc-9qR">
-                                                <rect key="frame" x="16" y="44" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="44" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Official Language: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HU-NH-sEW">
-                                                <rect key="frame" x="16" y="64" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="64" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Official Language: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tss-9R-Cn4">
-                                                <rect key="frame" x="16" y="84" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="84" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canadian work experience: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgL-Dq-Jp5">
-                                                <rect key="frame" x="16" y="104" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="104" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spouse factors: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uT4-ow-dIi">
-                                                <rect key="frame" x="16" y="141" width="358" height="21"/>
+                                                <rect key="frame" x="16" y="141" width="396" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" name="Blue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level of education: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8p0-qL-SEp">
-                                                <rect key="frame" x="16" y="165" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="165" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Official Language: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXN-9r-cOS">
-                                                <rect key="frame" x="16" y="185" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="185" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canadian work experience: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hap-zt-lxZ">
-                                                <rect key="frame" x="16" y="205" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="205" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skill transferability factors: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06Y-su-wWf">
-                                                <rect key="frame" x="16" y="242" width="358" height="21"/>
+                                                <rect key="frame" x="16" y="242" width="396" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" name="Blue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPy-aN-RGA">
-                                                <rect key="frame" x="16" y="266" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="266" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official Language proficiency and education: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGb-lx-Z5g">
-                                                <rect key="frame" x="16" y="286" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="286" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canadian work experience and education: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkX-HA-GD0">
-                                                <rect key="frame" x="16" y="306" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="306" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foreign work experience: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDN-H1-64O">
-                                                <rect key="frame" x="16" y="326" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="326" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official Language proficiency and foreign work experience: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUk-49-DZl">
-                                                <rect key="frame" x="16" y="346" width="358" height="33.666666666666686"/>
+                                                <rect key="frame" x="16" y="346" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canadian and foreign work experience: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEY-w5-mq0">
-                                                <rect key="frame" x="16" y="382.66666666666663" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="366" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Certificate of qualification: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECb-Hh-wnH">
-                                                <rect key="frame" x="16" y="402.66666666666663" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="386" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional points: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7Q-a8-pJh">
-                                                <rect key="frame" x="16" y="439.66666666666663" width="358" height="21"/>
+                                                <rect key="frame" x="16" y="423" width="396" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" name="Blue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provincial nomination: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sla-EQ-fem">
-                                                <rect key="frame" x="16" y="463.66666666666663" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="447" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job offer: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iid-yL-2Je">
-                                                <rect key="frame" x="16" y="483.66666666666663" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="467" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study in Canada: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyC-Qf-90H">
-                                                <rect key="frame" x="16" y="503.66666666666663" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="487" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sibling in Canada: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGg-QT-yqW">
-                                                <rect key="frame" x="16" y="523.66666666666663" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="507" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="French-language skills: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1q-GC-q9R">
-                                                <rect key="frame" x="16" y="543.66666666666663" width="358" height="17"/>
+                                                <rect key="frame" x="16" y="527" width="396" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1829,17 +1815,17 @@ A brother or sister is related to you by:
             <objects>
                 <viewController title="SignUp" id="LB2-Ai-fR9" customClass="SignUpViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NHO-Mh-Ja8">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email address below to get your free consultation with our Immigration specialist" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T96-qa-6fW">
-                                <rect key="frame" x="16" y="140" width="358" height="64.333333333333314"/>
+                                <rect key="frame" x="16" y="140" width="396" height="42.333333333333343"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U1a-zS-3dL">
-                                <rect key="frame" x="16" y="224.33333333333334" width="358" height="40.000000000000028"/>
+                                <rect key="frame" x="16" y="202.33333333333334" width="396" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="gfC-63-5or"/>
                                 </constraints>
@@ -1856,7 +1842,7 @@ A brother or sister is related to you by:
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUP-zo-rdI">
-                                <rect key="frame" x="16" y="294.33333333333331" width="358" height="40"/>
+                                <rect key="frame" x="16" y="272.33333333333331" width="396" height="40"/>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="azl-NS-m0t"/>
@@ -1904,7 +1890,7 @@ A brother or sister is related to you by:
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="4d2-S5-zAg"/>
-        <segue reference="VzR-gb-vsN"/>
+        <segue reference="P6M-jP-BlD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="121"/>

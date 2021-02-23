@@ -15,7 +15,7 @@
 "3S4-Gd-GNA.title" = "Các yếu tố khác";
 
 /* Class = "UILabel"; text = "Do you have a certificate of qualification from a Canadian province, territory or federal body?"; ObjectID = "3pv-9i-aOR"; */
-"3pv-9i-aOR.text" = "Bạn có giấy chứng nhận đủ điều kiện từ một tỉnh, vùng lãnh thổ hoặc cơ quan liên bang của Canada không?";
+"lJV-EY-xDZ.text" = "Bạn có giấy chứng nhận đủ điều kiện từ một tỉnh, vùng lãnh thổ hoặc cơ quan liên bang của Canada không?";
 
 /* Class = "UILabel"; text = "- If you’ve been invited to apply, enter your age on the date you were invited.\n- If you plan to complete an Express Entry profile, enter your current age."; ObjectID = "4C9-d9-euT"; */
 "4C9-d9-euT.text" = "Tuổi tác của bạn sẽ được xác định qua ngày tháng năm sinh. Hãy nhập tuổi hiện tại của bạn để hoàn thiện hệ thống tính điểm.";
@@ -42,7 +42,7 @@
 "5ge-Hc-9qR.text" = "Trình độ học vấn: ";
 
 /* Class = "UILabel"; text = "Do you have a nomination certificate from a province or territory?"; ObjectID = "66B-4C-TOO"; */
-"66B-4C-TOO.text" = "Bạn có giấy chứng nhận đề cử từ một tỉnh hoặc vùng lãnh thổ không?";
+"OFG-7n-yGY.text" = "Bạn có giấy chứng nhận đề cử từ một tỉnh hoặc vùng lãnh thổ không?";
 
 /* Class = "UISwitch"; title = "isPartnerCanadian"; ObjectID = "8ea-g3-Lyx"; */
 "8ea-g3-Lyx.title" = "isPartnerCanadian";
@@ -54,7 +54,7 @@
 "9lM-Ru-Apg.text" = "Yếu tố con người: ";
 
 /* Class = "UILabel"; text = "Which NOC skill type or level is the job offer?"; ObjectID = "B3h-g2-HAV"; */
-"B3h-g2-HAV.text" = "Thư mời làm việc của bạn thuộc NOC nào?";
+"MYS-eA-M0P.text" = "Thư mời làm việc của bạn thuộc NOC nào?";
 
 /* Class = "UIViewController"; title = "Age"; ObjectID = "Ctc-NV-w9v"; */
 "Ctc-NV-w9v.title" = "Độ tuổi";
@@ -108,13 +108,13 @@
 "LcU-hO-zES.title" = "Thông tin Vợ/Chồng";
 
 /* Class = "UISegmentedControl"; LiO-L9-Jk1.segmentTitles[0] = "Type 00"; ObjectID = "LiO-L9-Jk1"; */
-"LiO-L9-Jk1.segmentTitles[0]" = "Loại OO";
+"4y9-pr-3B3.segmentTitles[0]" = "Loại OO";
 
 /* Class = "UISegmentedControl"; LiO-L9-Jk1.segmentTitles[1] = "Type A or B or 0"; ObjectID = "LiO-L9-Jk1"; */
-"LiO-L9-Jk1.segmentTitles[1]" = "Loại A, B hoặc O";
+"4y9-pr-3B3.segmentTitles[1]" = "Loại A, B hoặc O";
 
 /* Class = "UISegmentedControl"; LiO-L9-Jk1.segmentTitles[2] = "Type C or D"; ObjectID = "LiO-L9-Jk1"; */
-"LiO-L9-Jk1.segmentTitles[2]" = "Loại C hoặc D";
+"4y9-pr-3B3.segmentTitles[2]" = "Loại C hoặc D";
 
 /* Class = "UILabel"; text = "Canadian and foreign work experience: "; ObjectID = "MEY-w5-mq0"; */
 "MEY-w5-mq0.text" = "Kinh nghiệm làm việc trong và ngoài Canada: ";
@@ -170,8 +170,6 @@
 /* Class = "UITextField"; placeholder = "Please enter your email"; ObjectID = "U1a-zS-3dL"; */
 "U1a-zS-3dL.placeholder" = "Vui lòng nhập email của bạn";
 
-/* Class = "UILabel"; text = "If so, which language test did you take for your second official language? Test results must be less than two years old."; ObjectID = "UeA-Uu-6uI"; */
-"UeA-Uu-6uI.text" = "Nếu vậy, bạn đã làm bài kiểm tra ngôn ngữ nào? Kết quả kiểm tra phải dưới hai năm.";
 
 /* Class = "UIViewController"; title = "Result"; ObjectID = "Uwt-ks-XeC"; */
 "Uwt-ks-XeC.title" = "Kết quả";
@@ -261,7 +259,7 @@
 "jNY-xu-L9v.title" = "MaritalStatus";
 
 /* Class = "UILabel"; text = "Do you have a valid job offer supported by a LMIA?"; ObjectID = "jmR-8q-MOW"; */
-"jmR-8q-MOW.text" = "Bạn có lời mời làm việc hợp lệ được LMIA hỗ trợ không?";
+"S1t-gD-mhp.text" = "Bạn có lời mời làm việc hợp lệ được LMIA hỗ trợ không?";
 
 /* Class = "UISwitch"; title = "switchA"; ObjectID = "kPD-ab-p8o"; */
 "kPD-ab-p8o.title" = "switchA";
@@ -279,7 +277,7 @@
 "kf9-Xj-d2S.text" = "Bạn có bằng cấp, văn bằng hoặc chứng chỉ của Canada chưa?";
 
 /* Class = "UILabel"; text = "A valid job offer must be:\n- Full-time\n- In a skilled job listed as Skill Type 0, or Skill Level A or B in the 2011 National Occupational Classification\n- Supported by a Labour Market Impact Assessment (LMIA) or exempt from needing one\n- For one year from the time you become a permanent resident\n A job offer isn’t valid if your employer is:\n- An embassy, high commission or consulate in Canada or\n- On the list of ineligible employers."; ObjectID = "kgD-h5-0by"; */
-"kgD-h5-0by.text" = "Thư mời làm việc hợp lệ phải đạt những yêu cầu sau:\n- Toàn thời gian và có hiệu lực 1 năm\n- Công việc được liệt kê thuộc NOC O, A, B trong Hệ thống Phân loại Ngành nghề Quốc gia\n- Được hỗ trợ bởi Labour Market Impact Assessment (LMIA ) hoặc được miễn LMIA\n Thư mời làm việc không hợp lệ khi chủ lao động là:\n- Đại sứ quán, Cơ quan cấp cao hoặc Lãnh sự quán ở Canada; hoặc\n- Thuộc các nhà tuyển dụng không đủ điều kiện.";
+"VIL-lp-gLH.text" = "Thư mời làm việc hợp lệ phải đạt những yêu cầu sau:\n- Toàn thời gian và có hiệu lực 1 năm\n- Công việc được liệt kê thuộc NOC O, A, B trong Hệ thống Phân loại Ngành nghề Quốc gia\n- Được hỗ trợ bởi Labour Market Impact Assessment (LMIA ) hoặc được miễn LMIA\n Thư mời làm việc không hợp lệ khi chủ lao động là:\n- Đại sứ quán, Cơ quan cấp cao hoặc Lãnh sự quán ở Canada; hoặc\n- Thuộc các nhà tuyển dụng không đủ điều kiện.";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "laM-Ob-Bqb"; */
 "laM-Ob-Bqb.normalTitle" = "Tiếp";
@@ -321,7 +319,7 @@
 "sPy-aN-RGA.text" = "Học vấn: ";
 
 /* Class = "UILabel"; text = "You need to submit language test results that are less than two years old for all programs under Express Entry, even if English or French is your first language."; ObjectID = "tZP-ie-2aJ"; */
-"tZP-ie-2aJ.text" = "Bạn cần gửi kết quả kiểm tra ngôn ngữ dưới hai năm cho tất cả các chương trình trong chương trình Express Entry, ngay cả khi tiếng Anh hoặc tiếng Pháp là ngôn ngữ mẹ đẻ của bạn.";
+"tZP-ie-2aJ.text" = "Kết quả kiểm tra phải dưới hai năm, ngay cả khi tiếng Anh hoặc tiếng Pháp là ngôn ngữ chính của bạn.";
 
 /* Class = "UILabel"; text = "- You’re eligible for at least 1 Express Entry program; and\n- You have not filled out an Express Entry profile but you’d like to see what your Comprehensive Ranking System (CRS) score might be if you do; or\n- You were invited to apply for permanent residence, and want to see if a change to your profile may affect your CRS score"; ObjectID = "uCv-M0-pH3"; */
 "uCv-M0-pH3.text" = "- Bạn đủ điều kiện cho ít nhất 1 chương trình Express Entry; và\n- Bạn chưa điền vào hồ sơ Express Entry nhưng bạn muốn xem điểm Hệ thống xếp hạng toàn diện (CRS) của mình có thể là bao nhiêu nếu bạn điền; hoặc là\n- Bạn đã được mời đăng ký thường trú và muốn xem liệu sự thay đổi trong hồ sơ có thể ảnh hưởng đến điểm CRS của bạn hay không";
@@ -348,7 +346,7 @@
 "xGb-lx-Z5g.text" = "Trình độ ngôn ngữ và học vấn: ";
 
 /* Class = "UILabel"; text = "Note: A certificate of qualification lets people work in some skilled trades in Canada. Only the provinces, territories and a federal body can issue these certificates. To get one, a person must have them assess their training, trade experience and skills to and then pass a certification exam."; ObjectID = "xtK-VI-flo"; */
-"xtK-VI-flo.text" = "Lưu ý: Giấy chứng nhận trình độ cho phép mọi người làm việc trong một số ngành nghề có tay nghề cao ở Canada. Chỉ các tỉnh, vùng lãnh thổ và cơ quan liên bang mới có thể cấp các chứng chỉ này. Để có được, bạn phải yêu cầu họ đánh giá đào tạo, kinh nghiệm thương mại và kỹ năng và sau đó vượt qua kỳ thi cấp chứng chỉ.";
+"E3D-NR-fcC.text" = "Lưu ý: Giấy chứng nhận trình độ cho phép mọi người làm việc trong một số ngành nghề có tay nghề cao ở Canada. Chỉ các tỉnh, vùng lãnh thổ và cơ quan liên bang mới có thể cấp các chứng chỉ này. Để có được, bạn phải yêu cầu họ đánh giá đào tạo, kinh nghiệm thương mại và kỹ năng và sau đó vượt qua kỳ thi cấp chứng chỉ.";
 
 /* Class = "UILabel"; text = "Skilled Immigrants (Express Entry)"; ObjectID = "yHo-F5-thl"; */
 "yHo-F5-thl.text" = "Dành cho người có trình độ và kĩ năng";
