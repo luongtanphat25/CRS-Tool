@@ -1,0 +1,6 @@
+framework module Pods_CRS_Tool {
+  umbrella header "Pods-CRS Tool-umbrella.h"
+
+  export *
+  module * { export * }
+}

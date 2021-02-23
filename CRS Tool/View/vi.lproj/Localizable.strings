@@ -1,0 +1,59 @@
+/* 
+ Localizable.strings
+ CRS Tool
+ 
+ Created by Luong Tan Phat on 2021-02-08.
+ 
+ */
+
+"Annulled Marriage" = "Huỷ hôn";
+"Common-Law" = "Vợ chồng không chính thức";
+"Divorced/ Separated" = "Ly thân";
+"Legally Separated" = "Ly hôn";
+"Married" = "Đã kết hôn";
+"Never Married/ Single" = "Chưa kết hôn/ Độc thân";
+"Widowed" = "Goá phụ";
+
+"None, or less than secondary (high school)" = "Trình độ học vấn từ Trung học trở xuống";
+"Secondary diploma (high school graduation)" = "Trình độ tốt nghiệp Trung học Phổ thông";
+"One-year program at a university, college, trade or technical school, or other institute" = "Tốt nghiệp chương trình 1 năm tại trường đại học, cao đẳng, trường thương mại hoặc kỹ thuật hoặc viện khác";
+"Two-year program at a university, college, trade or technical school, or other institute" = "Tốt nghiệp chương trình 2 năm tại trường đại học, cao đẳng, trường thương mại hoặc kỹ thuật hoặc viện khác";
+"Bachelor's degree (three or more year program at a university, college, trade or technical school, or other institute)" = "Bằng cử nhân (chương trình 3 năm trở lên tại một trường đại học, cao đẳng, trường thương mại hoặc kỹ thuật hoặc học viện khác)";
+"Two or more certificates, diplomas or degrees. One must be for a program of three or more years" = "Tốt nghiệp hai hoặc nhiều chứng chỉ, văn bằng hoặc bằng cấp. Một phải dành cho chương trình từ 3 năm trở lên";
+"Master's degree, or professional degree needed to practice in a licensed profession" = "Bằng thạc sĩ hoặc bằng cấp chuyên nghiệp cần thiết để hành nghề trong một nghề được cấp phép";
+"Doctoral level university degree (PhD)" = "Trình độ tiến sĩ đại học (tiến sĩ)";
+
+"Secondary (high school) or less" = "Tốt nghiệp Trung học Phổ thông trở xuống";
+"One- or two-year diploma or certificate" = "Văn bằng hoặc chứng chỉ 1 hoặc 2 năm";
+"Degree, diploma or certificate of three years or longer OR a Master’s, professional or doctoral degree of at least one academic year" = "Bằng cấp, bằng tốt nghiệp hoặc chứng chỉ từ 3 năm trở lên HOẶC bằng Thạc sĩ, chuyên môn hoặc bằng tiến sĩ của ít nhất 1 năm học";
+
+"Speaking" = "Nói";
+"Listening" = "Nghe";
+"Reading" = "Đọc";
+"Writing" = "Viết";
+
+"year" = "năm";
+"years" = "năm";
+"None or < 1 year" = "Không có hoặc ít hơn 1 năm";
+
+"Sign up successfully" = "Đăng ký thành công";
+"Thank you for sign up with us. We will contact you soon." = "Cảm ơn bạn đã đăng ký với chúng tôi. Chúng tôi sẽ liên hệ lại với bạn sớm nhất có thể.";
+"Error" = "Lỗi";
+
+"The email address is already in use by another account." = "Địa chỉ email đã được đăng ký.";
+"The email address is badly formatted." = "Địa chỉ email không đúng định dạng.";
+
+"Enter profile's name" = "Nhập tên hồ sơ";
+"Add profile" = "Thêm hồ sơ";
+"Create a new profile with all default CRS score is 0" = "Tạo hồ sơ mới với điểm mặc định bằng 0";
+"Add" = "Thêm";
+"Cancel" = "Huỷ";
+"New profile" = "Hồ sơ mới";
+
+"Age" = "Độ tuổi";
+"Education" = "Học vấn";
+"First language" = "Ngôn ngữ I";
+
+"Change name" = "Đổi tên";
+"Please enter a new name" = "Vui lòng nhập tên mới";
+"Save" = "Lưu";
