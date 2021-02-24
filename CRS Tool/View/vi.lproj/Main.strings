@@ -122,9 +122,6 @@
 /* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "NUP-zo-rdI"; */
 "NUP-zo-rdI.normalTitle" = "Đăng ký";
 
-/* Class = "UILabel"; text = "Canada's official languages are English and French."; ObjectID = "Oya-Qh-t1d"; */
-"Oya-Qh-t1d.text" = "Ngôn ngữ chính thức của Canada là tiếng Anh và tiếng Pháp.";
-
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "PIk-Cy-9xR"; */
 "PIk-Cy-9xR.normalTitle" = "Tiếp";
 
@@ -159,7 +156,7 @@
 "Sxm-dT-sx3.segmentTitles[3]" = "TCF Canada";
 
 /* Class = "UILabel"; text = "Enter your email address below to get your free consultation with our Immigration specialist"; ObjectID = "T96-qa-6fW"; */
-"T96-qa-6fW.text" = "Nhập địa chỉ email của bạn dưới đây để nhận tư vấn miễn phí với chuyên gia Nhập cư của chúng tôi";
+"T96-qa-6fW.text" = "Nhập địa chỉ email của bạn dưới đây để nhận tư vấn miễn phí với Campbell Immigration";
 
 /* Class = "UILabel"; text = "How old are you?"; ObjectID = "TT9-qO-BCq"; */
 "TT9-qO-BCq.text" = "Bạn bao nhiêu tuổi?";
@@ -171,7 +168,7 @@
 "U1a-zS-3dL.placeholder" = "Vui lòng nhập email của bạn";
 
 /* Class = "UILabel"; text = "If so, which language test did you take for your second official language? Test results must be less than two years old."; ObjectID = "UeA-Uu-6uI"; */
-"UeA-Uu-6uI.text" = "Nếu vậy, bạn đã làm bài kiểm tra ngôn ngữ nào? Kết quả kiểm tra phải dưới hai năm.";
+"UeA-Uu-6uI.text" = "Kết quả kiểm tra phải dưới hai năm.";
 
 /* Class = "UIViewController"; title = "Result"; ObjectID = "Uwt-ks-XeC"; */
 "Uwt-ks-XeC.title" = "Kết quả";
@@ -321,7 +318,7 @@
 "sPy-aN-RGA.text" = "Học vấn: ";
 
 /* Class = "UILabel"; text = "You need to submit language test results that are less than two years old for all programs under Express Entry, even if English or French is your first language."; ObjectID = "tZP-ie-2aJ"; */
-"tZP-ie-2aJ.text" = "Bạn cần gửi kết quả kiểm tra ngôn ngữ dưới hai năm cho tất cả các chương trình trong chương trình Express Entry, ngay cả khi tiếng Anh hoặc tiếng Pháp là ngôn ngữ mẹ đẻ của bạn.";
+"tZP-ie-2aJ.text" = "Kết quả kiểm tra phải dưới hai năm cho tất cả các chương trình trong Express Entry.";
 
 /* Class = "UILabel"; text = "- You’re eligible for at least 1 Express Entry program; and\n- You have not filled out an Express Entry profile but you’d like to see what your Comprehensive Ranking System (CRS) score might be if you do; or\n- You were invited to apply for permanent residence, and want to see if a change to your profile may affect your CRS score"; ObjectID = "uCv-M0-pH3"; */
 "uCv-M0-pH3.text" = "- Bạn đủ điều kiện cho ít nhất 1 chương trình Express Entry; và\n- Bạn chưa điền vào hồ sơ Express Entry nhưng bạn muốn xem điểm Hệ thống xếp hạng toàn diện (CRS) của mình có thể là bao nhiêu nếu bạn điền; hoặc là\n- Bạn đã được mời đăng ký thường trú và muốn xem liệu sự thay đổi trong hồ sơ có thể ảnh hưởng đến điểm CRS của bạn hay không";
