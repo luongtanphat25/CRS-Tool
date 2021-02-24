@@ -8,9 +8,11 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
-    var score = Score()
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.hidesBackButton = true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

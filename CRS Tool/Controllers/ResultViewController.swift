@@ -100,7 +100,7 @@ class ResultViewController: UIViewController {
             try! realm.write { score.finalScore = total }
         }
     }
-    
+
     @IBAction func tryAgainButtonPressed(_ sender: UIButton) {
         if let nav = self.navigationController {
             for controller in nav.viewControllers {

@@ -50,7 +50,7 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             case 0:
                 partnerExLabel.text = K.NONE
             case 1:
-                partnerExLabel.text = "1\(K.YEAR)"
+                partnerExLabel.text = "1 \(K.YEAR)"
             case 5:
                 partnerExLabel.text = ">= 5 \(K.YEARS)"
             default:
@@ -122,7 +122,7 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             case 0:
                 partnerExLabel.text = K.NONE
             case 1:
-                partnerExLabel.text = "1\(K.YEAR)"
+                partnerExLabel.text = "1 \(K.YEAR)"
             case 5:
                 partnerExLabel.text = ">= 5 \(K.YEARS)"
             default:

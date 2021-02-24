@@ -88,5 +88,7 @@ struct K {
     static let U8 = "under800"
     static let U = "under1000"
     
+    static let LABEL = "Comprehensive Ranking System"
+    
     static let URL = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html"
 }
