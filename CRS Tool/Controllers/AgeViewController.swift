@@ -14,6 +14,9 @@ class AgeViewController: UIViewController {
     
     @IBOutlet weak var ageSlider: UISlider!
     @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var ageScore: UILabel!
+    
+    @IBOutlet weak var scoreView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +24,15 @@ class AgeViewController: UIViewController {
         if let score = score {
             ageSlider.setValue(Float(score.age), animated: true)
             ageLabel.text = "\(Int(score.age))"
+            ageScore.text = "+ \(score.ageToScore())"
         }
     }
     
     @IBAction func ageSliderChanged(_ sender: UISlider) {
         if let score = score {
-            do {
-                try realm.write {
-                    score.age = Int(ageSlider.value)
-                }
-            } catch { print(error) }
+            try! realm.write {
+                score.age = Int(ageSlider.value)
+            }
 
             switch ageSlider.value {
             case 17:
@@ -40,16 +42,16 @@ class AgeViewController: UIViewController {
             default:
                 ageLabel.text = "\(Int(ageSlider.value))"
             }
+            
+            ageScore.text = "+ \(score.ageToScore())"
         }
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         if let score = score {
-            do {
-                try realm.write {
-                    score.age = Int(ageSlider.value)
-                }
-            } catch { print(error) }
+            try! realm.write {
+                score.age = Int(ageSlider.value)
+            }
         }
     }
     // MARK: - Navigation

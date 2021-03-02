@@ -1,11 +1,10 @@
 /* 
- Localizable.strings
- CRS Tool
- 
- Created by Luong Tan Phat on 2021-02-08.
- 
- */
+  Localizable.strings
+  CRS Tool
 
+  Created by Luong Tan Phat on 2021-03-02.
+  
+*/
 "Annulled Marriage" = "Huỷ hôn";
 "Common-Law" = "Vợ chồng không chính thức";
 "Divorced/ Separated" = "Ly thân";
@@ -57,3 +56,8 @@
 "Change name" = "Đổi tên";
 "Please enter a new name" = "Vui lòng nhập tên mới";
 "Save" = "Lưu";
+"Welcome" = "Chào mừng";
+"Thank you for your download. To add a new profile, press the red button on the right corner. Press the profile to edit. Swipe to the right to change the profile's name or delete." = "Cảm ơn bạn đã ủng hộ. Để tạo hồ sơ mới, nhấn nút màu đỏ ở góc bên phải. Nhấn vào hồ sơ để chỉnh sửa. Vuốt sang phải để thay đổi tên hoặc xóa hồ sơ.";
+
+"Change to Vietnamese" = "Đổi sang tiếng Anh";
+"Set preferred language to Vietnamese in Settings." = "Đổi ngôn ngữ sang tiếng Anh trong Cài đặt.";

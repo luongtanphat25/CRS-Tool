@@ -14,8 +14,11 @@ class CanadianDegreeViewController: UIViewController, UIPickerViewDelegate, UIPi
     let realm = try! Realm()
     
     @IBOutlet weak var haveCanadianDegreeSwitch: UISwitch!
-    @IBOutlet weak var degreeLabel: UILabel!
     @IBOutlet weak var degreePicker: UIPickerView!
+    @IBOutlet weak var totalView: UIView!
+    
+    @IBOutlet weak var degreeScore: UILabel!
+    @IBOutlet weak var scoreView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,15 +27,15 @@ class CanadianDegreeViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         if let score = score {
             haveCanadianDegreeSwitch.setOn(score.haveCanadianDegree, animated: true)
-            
+            degreeScore.text = "+ \(score.studyCanadaToScore())"
             if haveCanadianDegreeSwitch.isOn {
-                degreeLabel.isHidden = false
                 degreePicker.isHidden = false
                 degreePicker.selectRow(score.studyInCanada, inComponent: 0, animated: true)
             } else {
-                degreeLabel.isHidden = true
                 degreePicker.isHidden = true
             }
+            scoreView.isHidden = !score.haveCanadianDegree
+            totalView.backgroundColor = score.haveCanadianDegree ? UIColor.white : UIColor(named: K.BACKGROUND)
         }
     }
     
@@ -46,12 +49,14 @@ class CanadianDegreeViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     @IBAction func haveCanadianDegreeChanged(_ sender: UISwitch) {
+        scoreView.isHidden = !sender.isOn
         if let score = score {
             try! realm.write { score.haveCanadianDegree = sender.isOn }
-            degreeLabel.isHidden.toggle()
             degreePicker.isHidden.toggle()
+            degreeScore.text = "+ \(score.studyCanadaToScore())"
             degreePicker.selectRow(score.studyInCanada, inComponent: 0, animated: true)
         }
+        totalView.backgroundColor = sender.isOn ? UIColor.white :  UIColor(named: K.BACKGROUND)
     }
     
     // MARK: - Picker
@@ -69,12 +74,11 @@ class CanadianDegreeViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-        let title = UILabel(frame: CGRect(x: 0, y: 0, width: pickerView.frame.size.width - 30, height: 50))
+        let title = UILabel(frame: CGRect(x: 0, y: 0, width: pickerView.frame.size.width-30, height: 80))
         title.text = K.STUDY_IN_CANADA_LEVELS[row]
         title.font = UIFont(name: "System", size: 17)
-        title.lineBreakMode = .byWordWrapping;
+        title.textColor = UIColor(named: K.TEXT)
         title.numberOfLines = 0;
-        title.sizeToFit()
         return title
     }
     
@@ -83,6 +87,7 @@ class CanadianDegreeViewController: UIViewController, UIPickerViewDelegate, UIPi
             try! realm.write {
                 score.studyInCanada = haveCanadianDegreeSwitch.isOn ? row : score.studyInCanada
             }
+            degreeScore.text = "+ \(score.studyCanadaToScore())"
         }
     }
     

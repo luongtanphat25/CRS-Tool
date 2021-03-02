@@ -7,13 +7,29 @@
 
 import UIKit
 import Firebase
-
+import RealmSwift
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    var hasLaunched: Bool!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        Thread.sleep(forTimeInterval: 1)
+        
+        hasLaunched = UserDefaults.standard.bool(forKey: "hasLaunched")
+        
+        if hasLaunched {
+            hasLaunched = true
+        } else {
+            UserDefaults.standard.set(true, forKey: "hasLaunched")
+        }
+        
         return true
+    }
+    
+    func setLaunched() {
+        hasLaunched = true
     }
 
     // MARK: - UISceneSession Lifecycle

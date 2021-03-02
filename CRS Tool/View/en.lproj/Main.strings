@@ -3,25 +3,25 @@
 "06Y-su-wWf.text" = "Skill transferability factors: ";
 
 /* Class = "UINavigationItem"; title = "Official Languages"; ObjectID = "1ce-5v-ZSU"; */
-"1ce-5v-ZSU.title" = "Ngôn Ngữ";
+"1ce-5v-ZSU.title" = "Official Languages";
 
 /* Class = "UILabel"; text = "None"; ObjectID = "1qN-YW-XiX"; */
 "1qN-YW-XiX.text" = "None";
 
 /* Class = "UILabel"; text = "First Official Language: "; ObjectID = "2HU-NH-sEW"; */
-"2HU-NH-sEW.text" = "Ngôn ngữ thứ I: ";
+"2HU-NH-sEW.text" = "First Official Language: ";
 
 /* Class = "UILabel"; text = "Writing:"; ObjectID = "2uj-os-h96"; */
 "2uj-os-h96.text" = "Writing:";
 
 /* Class = "UINavigationItem"; title = "Others"; ObjectID = "3S4-Gd-GNA"; */
-"3S4-Gd-GNA.title" = "Yếu tố khác";
+"3S4-Gd-GNA.title" = "Others";
 
 /* Class = "UILabel"; text = "Do you have a certificate of qualification from a Canadian province, territory or federal body?"; ObjectID = "3pv-9i-aOR"; */
-"3pv-9i-aOR.text" = "Bạn có giấy chứng nhận đủ điều kiện từ một tỉnh, vùng lãnh thổ hoặc cơ quan liên bang của Canada không?";
+"3pv-9i-aOR.text" = "Do you have a certificate of qualification from a Canadian province, territory or federal body?";
 
 /* Class = "UILabel"; text = "Age: "; ObjectID = "4hj-im-Pw3"; */
-"4hj-im-Pw3.text" = "Độ tuổi: ";
+"4hj-im-Pw3.text" = "Age: ";
 
 /* Class = "UISegmentedControl"; 5Ui-N7-cF2.segmentTitles[0] = "CELPIP"; ObjectID = "5Ui-N7-cF2"; */
 "5Ui-N7-cF2.segmentTitles[0]" = "CELPIP";
@@ -36,7 +36,10 @@
 "5Ui-N7-cF2.segmentTitles[3]" = "TCF Canada";
 
 /* Class = "UILabel"; text = "Level of education: "; ObjectID = "5ge-Hc-9qR"; */
-"5ge-Hc-9qR.text" = "Trình độ học vấn: ";
+"5ge-Hc-9qR.text" = "Level of education: ";
+
+/* Class = "UILabel"; text = "Do you have a nomination certificate from a province or territory?"; ObjectID = "66B-4C-TOO"; */
+"66B-4C-TOO.text" = "Do you have a nomination certificate from a province or territory?";
 
 /* Class = "UILabel"; text = "+ 110"; ObjectID = "6jg-WW-T5B"; */
 "6jg-WW-T5B.text" = "+ 110";
@@ -48,7 +51,7 @@
 "8ea-g3-Lyx.title" = "isPartnerCanadian";
 
 /* Class = "UILabel"; text = "Level of education: "; ObjectID = "8p0-qL-SEp"; */
-"8p0-qL-SEp.text" = "Trình độ học vấn: ";
+"8p0-qL-SEp.text" = "Level of education: ";
 
 /* Class = "UILabel"; text = "+ 110"; ObjectID = "93i-kq-JSL"; */
 "93i-kq-JSL.text" = "+ 110";
@@ -57,22 +60,25 @@
 "94F-u0-ssf.text" = "1200";
 
 /* Class = "UILabel"; text = "Do you have other language results?"; ObjectID = "9Kt-MV-Gi2"; */
-"9Kt-MV-Gi2.text" = "Bạn có kết quả ngôn ngữ khác không?";
+"9Kt-MV-Gi2.text" = "Do you have other language results?";
 
 /* Class = "UILabel"; text = "Core/Human capital factors: "; ObjectID = "9lM-Ru-Apg"; */
-"9lM-Ru-Apg.text" = "Yếu tố con người: ";
+"9lM-Ru-Apg.text" = "Core/Human capital factors: ";
+
+/* Class = "UILabel"; text = "+ 110"; ObjectID = "A2H-V5-GZc"; */
+"A2H-V5-GZc.text" = "+ 110";
 
 /* Class = "UIViewController"; title = "Age"; ObjectID = "Ctc-NV-w9v"; */
-"Ctc-NV-w9v.title" = "Độ tuổi";
+"Ctc-NV-w9v.title" = "Age";
 
 /* Class = "UILabel"; text = "Writing:"; ObjectID = "DNU-XK-JNv"; */
 "DNU-XK-JNv.text" = "Writing:";
 
 /* Class = "UILabel"; text = "None"; ObjectID = "E5w-KV-h0R"; */
-"E5w-KV-h0R.text" = "Không có";
+"E5w-KV-h0R.text" = "None";
 
 /* Class = "UILabel"; text = "Certificate of qualification: "; ObjectID = "ECb-Hh-wnH"; */
-"ECb-Hh-wnH.text" = "Giấy chứng nhận trình độ: ";
+"ECb-Hh-wnH.text" = "Certificate of qualification: ";
 
 /* Class = "UISegmentedControl"; Ewj-iA-m6J.segmentTitles[0] = "CELPIP"; ObjectID = "Ewj-iA-m6J"; */
 "Ewj-iA-m6J.segmentTitles[0]" = "CELPIP";
@@ -87,67 +93,61 @@
 "Ewj-iA-m6J.segmentTitles[3]" = "TCF Canada";
 
 /* Class = "UINavigationItem"; title = "Experiences"; ObjectID = "Fsa-Cf-YCC"; */
-"Fsa-Cf-YCC.title" = "Kinh nghiệm";
+"Fsa-Cf-YCC.title" = "Experiences";
 
 /* Class = "UILabel"; text = "Speaking:"; ObjectID = "Gdp-tP-GOn"; */
 "Gdp-tP-GOn.text" = "Speaking:";
 
 /* Class = "UINavigationItem"; title = "Result"; ObjectID = "Hwk-Fq-7wT"; */
-"Hwk-Fq-7wT.title" = "Kết quả";
+"Hwk-Fq-7wT.title" = "Result";
 
 /* Class = "UILabel"; text = "Study in Canada: "; ObjectID = "HyC-Qf-90H"; */
-"HyC-Qf-90H.text" = "Học tập ở Canada: ";
+"HyC-Qf-90H.text" = "Study in Canada: ";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "IJE-tn-0KJ"; */
-"IJE-tn-0KJ.normalTitle" = "Tiếp";
+"IJE-tn-0KJ.normalTitle" = "Next";
 
-/* Class = "UILabel"; text = "In the last ten years, how many years of skilled work experience in Canada does your partner have?"; ObjectID = "IYc-ge-ZAC"; */
-"IYc-ge-ZAC.text" = "Trong 10 năm qua, vợ/chồng của bạn có bao nhiêu năm kinh nghiệm làm việc có tay nghề ở Canada?";
+/* Class = "UILabel"; text = "In the last ten years, how many years of skilled work experience in Canada does your spouse/common-law partner have?"; ObjectID = "IYc-ge-ZAC"; */
+"IYc-ge-ZAC.text" = "In the last ten years, how many years of skilled work experience in Canada does your spouse/common-law partner have?";
 
 /* Class = "UILabel"; text = "Canadian work experience: "; ObjectID = "IgL-Dq-Jp5"; */
-"IgL-Dq-Jp5.text" = "Kinh nghiệm làm việc ở Canada: ";
-
-/* Class = "UILabel"; text = "Do you have a nomination certificate from a province or territory?"; ObjectID = "IhE-QN-ANZ"; */
-"IhE-QN-ANZ.text" = "Bạn có đề cử tỉnh bang không?";
+"IgL-Dq-Jp5.text" = "Canadian work experience: ";
 
 /* Class = "UILabel"; text = "Job offer: "; ObjectID = "Iid-yL-2Je"; */
-"Iid-yL-2Je.text" = "Thư mời làm việc: ";
+"Iid-yL-2Je.text" = "Job offer: ";
 
 /* Class = "UILabel"; text = "Speaking:"; ObjectID = "JYz-Eo-AjH"; */
 "JYz-Eo-AjH.text" = "Speaking:";
 
 /* Class = "UILabel"; text = "Sibling in Canada: "; ObjectID = "KGg-QT-yqW"; */
-"KGg-QT-yqW.text" = "Anh chị em ở Canada: ";
+"KGg-QT-yqW.text" = "Sibling in Canada: ";
 
 /* Class = "UINavigationItem"; title = "Education"; ObjectID = "KmB-Ti-mRo"; */
-"KmB-Ti-mRo.title" = "Học vấn";
-
-/* Class = "UILabel"; text = "+ 110"; ObjectID = "L4D-hg-gto"; */
-"L4D-hg-gto.text" = "+ 110";
+"KmB-Ti-mRo.title" = "Education";
 
 /* Class = "UIViewController"; title = "SignUp"; ObjectID = "LB2-Ai-fR9"; */
 "LB2-Ai-fR9.title" = "SignUp";
 
 /* Class = "UINavigationItem"; title = "Partner's Info"; ObjectID = "LcU-hO-zES"; */
-"LcU-hO-zES.title" = "Thông tin Vợ/Chồng";
+"LcU-hO-zES.title" = "Partner's Info";
 
 /* Class = "UISegmentedControl"; LiO-L9-Jk1.segmentTitles[0] = "Type OO"; ObjectID = "LiO-L9-Jk1"; */
-"LiO-L9-Jk1.segmentTitles[0]" = "Loại OO";
+"LiO-L9-Jk1.segmentTitles[0]" = "Type OO";
 
 /* Class = "UISegmentedControl"; LiO-L9-Jk1.segmentTitles[1] = "Type A, B or O"; ObjectID = "LiO-L9-Jk1"; */
-"LiO-L9-Jk1.segmentTitles[1]" = "Loại A, B or O";
+"LiO-L9-Jk1.segmentTitles[1]" = "Type A, B or O";
 
 /* Class = "UISegmentedControl"; LiO-L9-Jk1.segmentTitles[2] = "Type C or D"; ObjectID = "LiO-L9-Jk1"; */
-"LiO-L9-Jk1.segmentTitles[2]" = "Loại C or D";
+"LiO-L9-Jk1.segmentTitles[2]" = "Type C or D";
 
 /* Class = "UILabel"; text = "Listening:"; ObjectID = "Lmb-hB-VIe"; */
 "Lmb-hB-VIe.text" = "Listening:";
 
 /* Class = "UILabel"; text = "Canadian and foreign work experience: "; ObjectID = "MEY-w5-mq0"; */
-"MEY-w5-mq0.text" = "Kinh nghiệm làm việc trong và ngoài Canada: ";
+"MEY-w5-mq0.text" = "Canadian and foreign work experience: ";
 
 /* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "NUP-zo-rdI"; */
-"NUP-zo-rdI.normalTitle" = "Đăng ký";
+"NUP-zo-rdI.normalTitle" = "Sign up";
 
 /* Class = "UILabel"; text = "Listening:"; ObjectID = "NZq-e3-PnK"; */
 "NZq-e3-PnK.text" = "Listening:";
@@ -156,58 +156,58 @@
 "OIq-Uf-ikW.text" = "Writing:";
 
 /* Class = "UINavigationItem"; title = "Profiles"; ObjectID = "OqQ-Zb-Ai1"; */
-"OqQ-Zb-Ai1.title" = "Hồ sơ";
+"OqQ-Zb-Ai1.title" = "Profiles";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "PIk-Cy-9xR"; */
-"PIk-Cy-9xR.normalTitle" = "Tiếp";
+"PIk-Cy-9xR.normalTitle" = "Next";
 
 /* Class = "UISwitch"; title = "switchA"; ObjectID = "PhO-QA-V1m"; */
 "PhO-QA-V1m.title" = "switchA";
 
-/* Class = "UILabel"; text = "Did your partner take a language test?"; ObjectID = "QqE-CU-qe2"; */
-"QqE-CU-qe2.text" = "Vợ/Chồng của bạn có kiểm tra ngôn ngữ không?";
+/* Class = "UILabel"; text = "Did your spouse or common-law partner take a language test?"; ObjectID = "QqE-CU-qe2"; */
+"QqE-CU-qe2.text" = "Did your spouse or common-law partner take a language test?";
 
 /* Class = "UILabel"; text = "Is your spouse or common-law partner a citizen or permanent resident of Canada?"; ObjectID = "SjW-DJ-kZH"; */
-"SjW-DJ-kZH.text" = "Vợ/Chồng của bạn có phải là công dân hoặc thường trú nhân Canada không?";
+"SjW-DJ-kZH.text" = "Is your spouse or common-law partner a citizen or permanent resident of Canada?";
 
 /* Class = "UILabel"; text = "Provincial nomination: "; ObjectID = "Sla-EQ-fem"; */
-"Sla-EQ-fem.text" = "Đề cử tỉnh bang: ";
+"Sla-EQ-fem.text" = "Provincial nomination: ";
 
 /* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "Snb-fB-oOr"; */
-"Snb-fB-oOr.normalTitle" = "Đăng ký";
+"Snb-fB-oOr.normalTitle" = "Sign up";
 
 /* Class = "UILabel"; text = "Enter your email address below to get your free consultation with Campbell Immigration"; ObjectID = "T96-qa-6fW"; */
-"T96-qa-6fW.text" = "Nhập địa chỉ email của bạn dưới đây để nhận tư vấn miễn phí với Campbell Immigration";
+"T96-qa-6fW.text" = "Enter your email address below to get your free consultation with Campbell Immigration";
 
 /* Class = "UILabel"; text = "How old are you?"; ObjectID = "TT9-qO-BCq"; */
-"TT9-qO-BCq.text" = "Bạn bao nhiêu tuổi?";
+"TT9-qO-BCq.text" = "How old are you?";
 
 /* Class = "UILabel"; text = "Second Official Language: "; ObjectID = "Tss-9R-Cn4"; */
-"Tss-9R-Cn4.text" = "Ngôn ngữ thứ II: ";
+"Tss-9R-Cn4.text" = "Second Official Language: ";
 
 /* Class = "UITextField"; placeholder = "Please enter your email"; ObjectID = "U1a-zS-3dL"; */
-"U1a-zS-3dL.placeholder" = "Vui lòng nhập email của bạn";
+"U1a-zS-3dL.placeholder" = "Please enter your email";
 
 /* Class = "UIViewController"; title = "Result"; ObjectID = "Uwt-ks-XeC"; */
-"Uwt-ks-XeC.title" = "Kết quả";
+"Uwt-ks-XeC.title" = "Result";
 
 /* Class = "UIViewController"; title = "Others"; ObjectID = "Vr5-CG-G8p"; */
-"Vr5-CG-G8p.title" = "Yếu tố khác";
+"Vr5-CG-G8p.title" = "Others";
 
 /* Class = "UILabel"; text = "None"; ObjectID = "Vvn-ig-eOS"; */
 "Vvn-ig-eOS.text" = "None";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Wcz-R6-8qT"; */
-"Wcz-R6-8qT.normalTitle" = "Tiếp";
+"Wcz-R6-8qT.normalTitle" = "Next";
 
 /* Class = "UILabel"; text = "Reading:"; ObjectID = "Wr9-vi-Zfi"; */
 "Wr9-vi-Zfi.text" = "Reading:";
 
 /* Class = "UILabel"; text = "Official Language proficiency and foreign work experience: "; ObjectID = "XUk-49-DZl"; */
-"XUk-49-DZl.text" = "Trình độ ngoại ngữ và kinh nghiệm làm việc ngoài Canada: ";
+"XUk-49-DZl.text" = "Official Language proficiency and foreign work experience: ";
 
 /* Class = "UILabel"; text = "French-language skills: "; ObjectID = "Y1q-GC-q9R"; */
-"Y1q-GC-q9R.text" = "Kỹ năng tiếng Pháp: ";
+"Y1q-GC-q9R.text" = "French-language skills: ";
 
 /* Class = "UILabel"; text = "+ 110"; ObjectID = "YEL-JN-Y2V"; */
 "YEL-JN-Y2V.text" = "+ 110";
@@ -222,37 +222,37 @@
 "ZbB-vw-0ht.text" = "+ 110";
 
 /* Class = "UILabel"; text = "Will your spouse or common-law partner come with you to Canada?"; ObjectID = "aZN-QQ-z9C"; */
-"aZN-QQ-z9C.text" = "Vợ/Chồng của bạn có đi cùng bạn đến Canada không?";
+"aZN-QQ-z9C.text" = "Will your spouse or common-law partner come with you to Canada?";
 
 /* Class = "UIViewController"; title = "Experiences"; ObjectID = "ah3-rc-AGB"; */
-"ah3-rc-AGB.title" = "Kinh nghiệm";
+"ah3-rc-AGB.title" = "Experiences";
 
-/* Class = "UILabel"; text = "Do you or your spouse or common law partner have at least one brother or sister living in Canada who is a citizen or permanent resident?"; ObjectID = "akS-mw-V3l"; */
-"akS-mw-V3l.text" = "Bạn hoặc vợ/chồng của bạn có ít nhất một anh/chị/em đang sống ở Canada là công dân hoặc thường trú nhân không?";
+/* Class = "UILabel"; text = "Do you or your spouse or common law partner (if they will come with you to Canada) have at least one brother or sister living in Canada who is a citizen or permanent resident?"; ObjectID = "akS-mw-V3l"; */
+"akS-mw-V3l.text" = "Do you or your spouse or common law partner (if they will come with you to Canada) have at least one brother or sister living in Canada who is a citizen or permanent resident?";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "b6d-LI-6qe"; */
-"b6d-LI-6qe.normalTitle" = "Tiếp";
+"b6d-LI-6qe.normalTitle" = "Next";
 
 /* Class = "UILabel"; text = "What is your marital status?"; ObjectID = "bQ1-7F-LoL"; */
-"bQ1-7F-LoL.text" = "Tình trạng hôn nhân của bạn?";
+"bQ1-7F-LoL.text" = "What is your marital status?";
 
 /* Class = "UINavigationItem"; title = "Age"; ObjectID = "cT8-sy-oiF"; */
-"cT8-sy-oiF.title" = "Độ tuổi";
+"cT8-sy-oiF.title" = "Age";
 
 /* Class = "UILabel"; text = "+ 110"; ObjectID = "dEq-ll-3WK"; */
 "dEq-ll-3WK.text" = "+ 110";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "dL3-WQ-SI0"; */
-"dL3-WQ-SI0.normalTitle" = "Tiếp";
+"dL3-WQ-SI0.normalTitle" = "Next";
 
-/* Class = "UIBarButtonItem"; title = "Draw"; ObjectID = "dg1-ss-MmQ"; */
-"dg1-ss-MmQ.title" = "Điểm";
+/* Class = "UISwitch"; title = "switchB"; ObjectID = "dSM-26-MFT"; */
+"dSM-26-MFT.title" = "switchB";
 
 /* Class = "UILabel"; text = "+ 110"; ObjectID = "dsd-0S-Rdd"; */
 "dsd-0S-Rdd.text" = "+ 110";
 
 /* Class = "UILabel"; text = "What is your level of education?"; ObjectID = "e6w-FS-blM"; */
-"e6w-FS-blM.text" = "Trình độ học vấn của bạn?";
+"e6w-FS-blM.text" = "What is your level of education?";
 
 /* Class = "UILabel"; text = "+ 110"; ObjectID = "eFj-Sv-Op1"; */
 "eFj-Sv-Op1.text" = "+ 110";
@@ -261,16 +261,13 @@
 "eQm-Sg-SgF.title" = "switchA";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "eiy-Wu-Ke0"; */
-"eiy-Wu-Ke0.normalTitle" = "Tiếp";
+"eiy-Wu-Ke0.normalTitle" = "Next";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "ewf-Hy-vMd"; */
-"ewf-Hy-vMd.normalTitle" = "Tiếp";
+"ewf-Hy-vMd.normalTitle" = "Next";
 
 /* Class = "UINavigationItem"; title = "Sign up"; ObjectID = "fC3-bO-Q8p"; */
-"fC3-bO-Q8p.title" = "Đăng ký";
-
-/* Class = "UIBarButtonItem"; title = "Language"; ObjectID = "fWk-qY-Des"; */
-"fWk-qY-Des.title" = "Tiếng Anh";
+"fC3-bO-Q8p.title" = "Sign up";
 
 /* Class = "UISegmentedControl"; gJm-QX-u5v.segmentTitles[0] = "CELPIP"; ObjectID = "gJm-QX-u5v"; */
 "gJm-QX-u5v.segmentTitles[0]" = "CELPIP";
@@ -282,31 +279,31 @@
 "gb5-mx-FIr.text" = "Reading:";
 
 /* Class = "UIViewController"; title = "Languages"; ObjectID = "gn3-8N-m0K"; */
-"gn3-8N-m0K.title" = "Ngôn ngữ";
+"gn3-8N-m0K.title" = "Languages";
 
 /* Class = "UILabel"; text = "30"; ObjectID = "hXy-wW-eT6"; */
 "hXy-wW-eT6.text" = "30";
 
 /* Class = "UILabel"; text = "Canadian work experience: "; ObjectID = "hap-zt-lxZ"; */
-"hap-zt-lxZ.text" = "Kinh nghiệm làm việc ở Canada: ";
+"hap-zt-lxZ.text" = "Canadian work experience: ";
 
 /* Class = "UIViewController"; title = "Education"; ObjectID = "heu-Ob-v2q"; */
-"heu-Ob-v2q.title" = "Học vấn";
+"heu-Ob-v2q.title" = "Education";
 
 /* Class = "UILabel"; text = "+ 110"; ObjectID = "iLz-74-Bor"; */
 "iLz-74-Bor.text" = "+ 110";
 
 /* Class = "UILabel"; text = "In the last ten years, how many years of skilled work experience in Canada do you have?"; ObjectID = "irp-3y-Rs5"; */
-"irp-3y-Rs5.text" = "Trong 10 năm qua, bạn có bao nhiêu năm kinh nghiệm làm việc theo diện tay nghề ở Canada?";
+"irp-3y-Rs5.text" = "In the last ten years, how many years of skilled work experience in Canada do you have?";
 
 /* Class = "UINavigationItem"; title = "Marital Status"; ObjectID = "j0u-Gn-Dyf"; */
-"j0u-Gn-Dyf.title" = "Tình trạng hôn nhân";
+"j0u-Gn-Dyf.title" = "Marital Status";
 
 /* Class = "UIViewController"; title = "MaritalStatus"; ObjectID = "jNY-xu-L9v"; */
 "jNY-xu-L9v.title" = "MaritalStatus";
 
 /* Class = "UILabel"; text = "Do you have a valid job offer supported by a LMIA?"; ObjectID = "jmR-8q-MOW"; */
-"jmR-8q-MOW.text" = "Bạn có thư mời làm việc hợp lệ được LMIA hỗ trợ không?";
+"jmR-8q-MOW.text" = "Do you have a valid job offer supported by a LMIA?";
 
 /* Class = "UISwitch"; title = "switchA"; ObjectID = "kPD-ab-p8o"; */
 "kPD-ab-p8o.title" = "switchA";
@@ -315,22 +312,22 @@
 "kWe-KO-lUR.title" = "isWithPartner";
 
 /* Class = "UILabel"; text = "In the last 10 years, how many total years of foreign skilled work experience do you have?"; ObjectID = "kXd-Ld-Rh7"; */
-"kXd-Ld-Rh7.text" = "Trong 10 năm qua, bạn có bao nhiêu năm kinh nghiệm làm việc có tay nghề ngoài Canada?";
+"kXd-Ld-Rh7.text" = "In the last 10 years, how many total years of foreign skilled work experience do you have?";
 
-/* Class = "UILabel"; text = "What is the highest level of education your partner has?"; ObjectID = "kZd-QA-w1m"; */
-"kZd-QA-w1m.text" = "Trình độ học vấn cao nhất mà vợ/chồng của bạn có?";
+/* Class = "UILabel"; text = "What is the highest level of education for which your spouse or common-law partner's has?"; ObjectID = "kZd-QA-w1m"; */
+"kZd-QA-w1m.text" = "What is the highest level of education for which your spouse or common-law partner's has?";
 
 /* Class = "UILabel"; text = "Have you earned a Canadian degree, diploma or certificate?"; ObjectID = "kf9-Xj-d2S"; */
-"kf9-Xj-d2S.text" = "Bạn có bằng cấp, văn bằng hoặc chứng chỉ của Canada không?";
+"kf9-Xj-d2S.text" = "Have you earned a Canadian degree, diploma or certificate?";
 
 /* Class = "UILabel"; text = "Speaking:"; ObjectID = "lAe-Ah-WUX"; */
 "lAe-Ah-WUX.text" = "Speaking:";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "laM-Ob-Bqb"; */
-"laM-Ob-Bqb.normalTitle" = "Tiếp";
+"laM-Ob-Bqb.normalTitle" = "Next";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "m1r-yB-MFD"; */
-"m1r-yB-MFD.normalTitle" = "Tiếp";
+"m1r-yB-MFD.normalTitle" = "Next";
 
 /* Class = "UILabel"; text = "Listening:"; ObjectID = "nCJ-sB-Osy"; */
 "nCJ-sB-Osy.text" = "Listening:";
@@ -348,40 +345,37 @@
 "qUN-ni-pze.text" = "Reading:";
 
 /* Class = "UIBarButtonItem"; title = "Try again"; ObjectID = "qaw-ER-eh7"; */
-"qaw-ER-eh7.title" = "Thử lại";
+"qaw-ER-eh7.title" = "Try again";
 
 /* Class = "UILabel"; text = "Additional points: "; ObjectID = "r7Q-a8-pJh"; */
-"r7Q-a8-pJh.text" = "Điểm bổ sung: ";
+"r7Q-a8-pJh.text" = "Additional points: ";
 
-/* Class = "UINavigationItem"; title = "Addition"; ObjectID = "rrq-2b-4Cx"; */
-"rrq-2b-4Cx.title" = "Điểm bổ sung";
+/* Class = "UINavigationItem"; title = "Canadian Family"; ObjectID = "rrq-2b-4Cx"; */
+"rrq-2b-4Cx.title" = "Canadian Family";
 
 /* Class = "UILabel"; text = "Foreign work experience: "; ObjectID = "sDN-H1-64O"; */
-"sDN-H1-64O.text" = "Kinh nghiệm làm việc ngoài Canada: ";
+"sDN-H1-64O.text" = "Foreign work experience: ";
 
 /* Class = "UILabel"; text = "Education: "; ObjectID = "sPy-aN-RGA"; */
-"sPy-aN-RGA.text" = "Học vấn: ";
-
-/* Class = "UISwitch"; title = "switchB"; ObjectID = "smU-rS-6Pe"; */
-"smU-rS-6Pe.title" = "switchB";
+"sPy-aN-RGA.text" = "Education: ";
 
 /* Class = "UINavigationItem"; title = "Canadian Degree"; ObjectID = "uM8-Wg-wDF"; */
-"uM8-Wg-wDF.title" = "Bằng cấp của Canada";
+"uM8-Wg-wDF.title" = "Canadian Degree";
 
 /* Class = "UILabel"; text = "Spouse factors: "; ObjectID = "uT4-ow-dIi"; */
-"uT4-ow-dIi.text" = "Yếu tố vợ chồng: ";
+"uT4-ow-dIi.text" = "Spouse factors: ";
 
 /* Class = "UILabel"; text = "First Official Language: "; ObjectID = "uXN-9r-cOS"; */
-"uXN-9r-cOS.text" = "Ngôn ngữ thứ I: ";
+"uXN-9r-cOS.text" = "First Official Language: ";
 
 /* Class = "UIViewController"; title = "CanadianDegree"; ObjectID = "wdh-jG-GQ4"; */
 "wdh-jG-GQ4.title" = "CanadianDegree";
 
 /* Class = "UILabel"; text = "Canadian work experience and education: "; ObjectID = "wkX-HA-GD0"; */
-"wkX-HA-GD0.text" = "Kinh nghiệm làm việc ở Canada và trình độ học vấn: ";
+"wkX-HA-GD0.text" = "Canadian work experience and education: ";
 
 /* Class = "UILabel"; text = "Official Language proficiency and education: "; ObjectID = "xGb-lx-Z5g"; */
-"xGb-lx-Z5g.text" = "Trình độ ngôn ngữ và học vấn: ";
+"xGb-lx-Z5g.text" = "Official Language proficiency and education: ";
 
 /* Class = "UILabel"; text = "+ 110"; ObjectID = "yoa-Hs-pha"; */
 "yoa-Hs-pha.text" = "+ 110";
