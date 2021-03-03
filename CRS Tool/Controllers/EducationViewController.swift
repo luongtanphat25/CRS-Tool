@@ -11,8 +11,10 @@ import RealmSwift
 class EducationViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     var score: Score?
     let realm = try! Realm()
+    @IBOutlet weak var scoreView: UIView!
     
     @IBOutlet weak var educationLevelPicker: UIPickerView!
+    @IBOutlet weak var educationScore: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ class EducationViewController: UIViewController, UIPickerViewDataSource, UIPicke
         
         if let score = score {
             educationLevelPicker.selectRow(score.education, inComponent: 0, animated: true)
+            educationScore.text = "+ \(score.educationToScore())"
         }
     }
     
@@ -46,18 +49,18 @@ class EducationViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-        let title = UILabel(frame: CGRect(x: 0, y: 0, width: pickerView.frame.size.width - 30, height: 50))
+        let title = UILabel(frame: CGRect(x: 0, y: 0, width: pickerView.frame.size.width-30, height: 80))
         title.text = K.EDUCATION_LEVELS[row]
         title.font = UIFont(name: "System", size: 17)
-        title.lineBreakMode = .byWordWrapping;
+        title.textColor = UIColor(named: K.TEXT)
         title.numberOfLines = 0;
-        title.sizeToFit()
         return title
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if let score = score {
             try! realm.write { score.education = row }
+            educationScore.text = "+ \(score.educationToScore())"
         }
     }
     

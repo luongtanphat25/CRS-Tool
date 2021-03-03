@@ -12,6 +12,11 @@ class ExperiencesViewController: UIViewController {
     var score: Score?
     let realm = try! Realm()
     
+    @IBOutlet weak var canadaExView: UIView!
+    @IBOutlet weak var foriegnExView: UIView!
+    @IBOutlet weak var canadaExScore: UILabel!
+    @IBOutlet weak var foriegnExScore: UILabel!
+    
     @IBOutlet weak var canadianExLabel: UILabel!
     @IBOutlet weak var foreignExLabel: UILabel!
     
@@ -24,6 +29,9 @@ class ExperiencesViewController: UIViewController {
         if let score = score {
             canadianExStepper.value = Double(score.canadianEx)
             foreignExStepper.value = Double(score.foriegnEx)
+            
+            canadaExScore.text = "+ \(score.canadianExperienceToScore())"
+            foriegnExScore.text = "+ \(score.experienceToScore())"
             
             switch Int(canadianExStepper.value) {
             case 0:
@@ -65,6 +73,8 @@ class ExperiencesViewController: UIViewController {
             default:
                 canadianExLabel.text = "\(Int(sender.value)) \(K.YEARS)"
             }
+            canadaExScore.text = "+ \(score.canadianExperienceToScore())"
+            foriegnExScore.text = "+ \(score.experienceToScore())"
         }
     }
     
@@ -84,6 +94,7 @@ class ExperiencesViewController: UIViewController {
             default:
                 foreignExLabel.text = "\(Int(sender.value)) \(K.YEARS)"
             }
+            foriegnExScore.text = "+ \(score.experienceToScore())"
         }
     }
     

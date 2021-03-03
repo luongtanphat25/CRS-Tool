@@ -13,13 +13,15 @@ class MaritalStatusViewController: UIViewController, UIPickerViewDelegate, UIPic
     let realm = try! Realm()
     
     @IBOutlet weak var maritalStatusPicker: UIPickerView!
-    @IBOutlet weak var isPartnerCanadianLabel: UILabel!
     @IBOutlet weak var isPartnerCanadian: UISwitch!
-    @IBOutlet weak var isWithPartnerLabel: UILabel!
     @IBOutlet weak var isWithPartner: UISwitch!
+    
+    @IBOutlet weak var partnerCanadianView: UIView!
+    @IBOutlet weak var withPartnerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         maritalStatusPicker.delegate = self
         maritalStatusPicker.dataSource = self
         
@@ -30,15 +32,11 @@ class MaritalStatusViewController: UIViewController, UIPickerViewDelegate, UIPic
             
             let row = maritalStatusPicker.selectedRow(inComponent: 0)
             if row == 1 || row == 4 {
-                isPartnerCanadian.isHidden = false
-                isPartnerCanadianLabel.isHidden = false
-                isWithPartner.isHidden = false
-                isWithPartnerLabel.isHidden = false
+                partnerCanadianView.isHidden = false
+                withPartnerView.isHidden = false
             } else {
-                isPartnerCanadian.isHidden = true
-                isPartnerCanadianLabel.isHidden = true
-                isWithPartner.isHidden = true
-                isWithPartnerLabel.isHidden = true
+                partnerCanadianView.isHidden = true
+                withPartnerView.isHidden = true
             }
         }
     }
@@ -46,15 +44,13 @@ class MaritalStatusViewController: UIViewController, UIPickerViewDelegate, UIPic
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         if let score = score {
             let row = maritalStatusPicker.selectedRow(inComponent: 0)
-            do {
-                try realm.write {
-                    if row == 1 || row == 4 {
-                        score.havePartner = (!score.isPartnerCanadian && score.isWithPartner) ? true : false
-                    } else {
-                        score.havePartner = false
-                    }
+            try! realm.write {
+                if row == 1 || row == 4 {
+                    score.havePartner = (!score.isPartnerCanadian && score.isWithPartner) ? true : false
+                } else {
+                    score.havePartner = false
                 }
-            } catch { print(error) }
+            }
         }
     }
     
@@ -62,24 +58,19 @@ class MaritalStatusViewController: UIViewController, UIPickerViewDelegate, UIPic
     
     @IBAction func isPartnerCanadianChanged(_ sender: UISwitch) {
         if let score = score {
-            do {
-                try realm.write {
-                    score.isPartnerCanadian = sender.isOn
-                    isWithPartner.isHidden.toggle()
-                    isWithPartnerLabel.isHidden.toggle()
-                    score.isWithPartner = sender.isOn ? false : isWithPartner.isOn
-                }
-            } catch { print(error) }
+            try! realm.write {
+                score.isPartnerCanadian = sender.isOn
+                withPartnerView.isHidden.toggle()
+                score.isWithPartner = sender.isOn ? false : isWithPartner.isOn
+            }
         }
     }
     
     @IBAction func isWithPartnerChanged(_ sender: UISwitch) {
         if let score = score {
-            do {
-                try realm.write {
-                    score.isWithPartner = sender.isOn
-                }
-            } catch { print(error) }
+            try! realm.write {
+                score.isWithPartner = sender.isOn
+            }
         }
     }
     
@@ -98,39 +89,33 @@ class MaritalStatusViewController: UIViewController, UIPickerViewDelegate, UIPic
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-        let title = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 50))
+        let title = UILabel(frame: CGRect(x: 0, y: 0, width: pickerView.frame.width-30, height: 50))
         title.text = K.MARITAL_STATUS[row]
-        title.font = UIFont(name: "System", size: 17)
+        title.textColor = UIColor(named: K.TEXT)
         return title
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if let score = score {
-            do {
-                try realm.write {
-                    score.selectedMaritalStatus = row
-                }
-            } catch { print(error) }
+            try! realm.write {
+                score.selectedMaritalStatus = row
+            }
             
             if row == 1 || row == 4 {
                 isPartnerCanadian.isHidden = false
-                isPartnerCanadianLabel.isHidden = false
+                partnerCanadianView.isHidden = false
                 
                 isWithPartner.isHidden = false
-                isWithPartnerLabel.isHidden = false
+                withPartnerView.isHidden = false
                 
                 if isPartnerCanadian.isOn {
-                    isWithPartner.isHidden = true
-                    isWithPartnerLabel.isHidden = true
+                    withPartnerView.isHidden = true
                 } else {
-                    isWithPartner.isHidden = false
-                    isWithPartnerLabel.isHidden = false
+                    withPartnerView.isHidden = false
                 }
             } else {
-                isPartnerCanadian.isHidden = true
-                isPartnerCanadianLabel.isHidden = true
-                isWithPartner.isHidden = true
-                isWithPartnerLabel.isHidden = true
+                partnerCanadianView.isHidden = true
+                withPartnerView.isHidden = true
             }
         }
     }

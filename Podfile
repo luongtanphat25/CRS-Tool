@@ -8,4 +8,5 @@ target 'CRS Tool' do
   pod 'Firebase/Auth'
   pod 'RealmSwift', '=10.1.4'
   pod 'SwipeCellKit'
+  pod 'Firebase/Firestore'
 end

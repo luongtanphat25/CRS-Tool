@@ -43,8 +43,12 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var siblingLabel: UILabel!
     @IBOutlet weak var frenchLabel: UILabel!
     
+    @IBOutlet weak var resultView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        resultView.layer.cornerRadius = resultView.layer.frame.width/2
+        
         if let score = score {
             ageLabel.text! += "\(score.ageToScore())"
             levelEducationLabel.text! += "\(score.educationToScore())"
@@ -98,10 +102,11 @@ class ResultViewController: UIViewController {
             
             granTotalLabel.text! = "\(total)"
             try! realm.write { score.finalScore = total }
+            
+            resultView.backgroundColor = UIColor(named: setColor(score: score.finalScore))
         }
     }
-    
-    @IBAction func tryAgainButtonPressed(_ sender: UIButton) {
+    @IBAction func tryAgainButtonPressed(_ sender: UIBarButtonItem) {
         if let nav = self.navigationController {
             for controller in nav.viewControllers {
                 if controller is ScoresTableViewController {
@@ -115,5 +120,20 @@ class ResultViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+    }
+    
+    func setColor(score: Int) -> String {
+        switch score {
+        case ...200:
+            return K.BLUE_DARK
+        case ...400:
+            return K.BLUE_LIGHT
+        case ...600:
+            return K.GREEN_LIGHT
+        case ...800:
+            return K.YELLOW
+        default:
+            return K.ORANGE
+        }
     }
 }

@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		449299BC56B35FFA7F69DF86 /* Pods_CRS_Tool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1FF25E10A5E39180EE7D141 /* Pods_CRS_Tool.framework */; };
-		7F06B15C25DF236100635711 /* DrawsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06B15B25DF236100635711 /* DrawsViewController.swift */; };
 		7F06B16F25DF2AFE00635711 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F06B16E25DF2AFE00635711 /* GoogleService-Info.plist */; };
 		7F06B1A825E017F200635711 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06B1A625E017F200635711 /* ProfileTableViewCell.swift */; };
 		7F06B1A925E017F200635711 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F06B1A725E017F200635711 /* ProfileTableViewCell.xib */; };
-		7F44621D25D1B4E500CB2DEF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F44621F25D1B4E500CB2DEF /* Localizable.strings */; };
 		7F540AE325CF702400EC8250 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F540AE225CF702400EC8250 /* SignUpViewController.swift */; };
+		7FA5013725EEB2D200B3D5E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FA5013925EEB2D200B3D5E8 /* Localizable.strings */; };
+		7FA5013E25EF20CB00B3D5E8 /* DrawsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA5013D25EF20CB00B3D5E8 /* DrawsTableViewController.swift */; };
+		7FA5016A25EF232600B3D5E8 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA5016925EF232600B3D5E8 /* Draw.swift */; };
 		7FA9921725DEFF8700FDAA0F /* ScoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA9921625DEFF8700FDAA0F /* ScoresTableViewController.swift */; };
 		7FBDC56625CDE5E600B1F647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC56525CDE5E600B1F647 /* AppDelegate.swift */; };
 		7FBDC56825CDE5E600B1F647 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC56725CDE5E600B1F647 /* SceneDelegate.swift */; };
@@ -25,7 +26,6 @@
 		7FBDC59625CE32D200B1F647 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC59125CE32D200B1F647 /* Score.swift */; };
 		7FBDC59725CE32D200B1F647 /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC59225CE32D200B1F647 /* TestResult.swift */; };
 		7FBDC59825CE32D200B1F647 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC59325CE32D200B1F647 /* Tests.swift */; };
-		7FBDC59F25CE33CA00B1F647 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC59E25CE33CA00B1F647 /* StartViewController.swift */; };
 		7FBDC5A325CE344800B1F647 /* MaritalStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC5A225CE344800B1F647 /* MaritalStatusViewController.swift */; };
 		7FBDC5A625CE405200B1F647 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC5A525CE405200B1F647 /* AgeViewController.swift */; };
 		7FBDC5A925CE430E00B1F647 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC5A825CE430E00B1F647 /* EducationViewController.swift */; };
@@ -41,28 +41,28 @@
 /* Begin PBXFileReference section */
 		2C3227053CB13B8201998686 /* Pods-CRS Tool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRS Tool.release.xcconfig"; path = "Target Support Files/Pods-CRS Tool/Pods-CRS Tool.release.xcconfig"; sourceTree = "<group>"; };
 		335CBEE5EC56812D4F7DC71E /* Pods-CRS Tool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRS Tool.debug.xcconfig"; path = "Target Support Files/Pods-CRS Tool/Pods-CRS Tool.debug.xcconfig"; sourceTree = "<group>"; };
-		7F06B15B25DF236100635711 /* DrawsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewController.swift; sourceTree = "<group>"; };
 		7F06B16E25DF2AFE00635711 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7F06B1A625E017F200635711 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		7F06B1A725E017F200635711 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		7F06B1C925E01E4F00635711 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "CRS Tool/Info.plist"; sourceTree = "<group>"; };
-		7F4461E825D17D8600CB2DEF /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
-		7F4461E925D17D8600CB2DEF /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		7F44621E25D1B4E500CB2DEF /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7F540AE225CF702400EC8250 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7FA5012825EE9EE600B3D5E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FA5012925EE9EE800B3D5E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FA5012A25EE9F0600B3D5E8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		7FA5012B25EE9F0800B3D5E8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7FA5013B25EEB2EA00B3D5E8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7FA5013D25EF20CB00B3D5E8 /* DrawsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsTableViewController.swift; sourceTree = "<group>"; };
+		7FA5016925EF232600B3D5E8 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
 		7FA9921625DEFF8700FDAA0F /* ScoresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresTableViewController.swift; sourceTree = "<group>"; };
 		7FBDC56225CDE5E600B1F647 /* CRS Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CRS Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBDC56525CDE5E600B1F647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FBDC56725CDE5E600B1F647 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7FBDC56C25CDE5E600B1F647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FBDC56E25CDE5E700B1F647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7FBDC57125CDE5E700B1F647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FBDC58F25CE32D200B1F647 /* K.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		7FBDC59025CE32D200B1F647 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		7FBDC59125CE32D200B1F647 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		7FBDC59225CE32D200B1F647 /* TestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResult.swift; sourceTree = "<group>"; };
 		7FBDC59325CE32D200B1F647 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7FBDC59E25CE33CA00B1F647 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		7FBDC5A225CE344800B1F647 /* MaritalStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaritalStatusViewController.swift; sourceTree = "<group>"; };
 		7FBDC5A525CE405200B1F647 /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
 		7FBDC5A825CE430E00B1F647 /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
@@ -100,11 +100,10 @@
 		7F06B19525E0116000635711 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7F44621F25D1B4E500CB2DEF /* Localizable.strings */,
 				7FBDC56B25CDE5E600B1F647 /* Main.storyboard */,
 				7FBDC57025CDE5E700B1F647 /* LaunchScreen.storyboard */,
-				7F06B1A625E017F200635711 /* ProfileTableViewCell.swift */,
 				7F06B1A725E017F200635711 /* ProfileTableViewCell.xib */,
+				7FA5013925EEB2D200B3D5E8 /* Localizable.strings */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +148,7 @@
 				7FBDC59025CE32D200B1F647 /* Test.swift */,
 				7FBDC59225CE32D200B1F647 /* TestResult.swift */,
 				7FBDC59325CE32D200B1F647 /* Tests.swift */,
+				7FA5016925EF232600B3D5E8 /* Draw.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,7 +165,6 @@
 		7FBDC59C25CE337D00B1F647 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7FBDC59E25CE33CA00B1F647 /* StartViewController.swift */,
 				7FBDC5A225CE344800B1F647 /* MaritalStatusViewController.swift */,
 				7FBDC5A525CE405200B1F647 /* AgeViewController.swift */,
 				7FBDC5A825CE430E00B1F647 /* EducationViewController.swift */,
@@ -178,7 +177,8 @@
 				7FBDC5BD25CEF41D00B1F647 /* ResultViewController.swift */,
 				7F540AE225CF702400EC8250 /* SignUpViewController.swift */,
 				7FA9921625DEFF8700FDAA0F /* ScoresTableViewController.swift */,
-				7F06B15B25DF236100635711 /* DrawsViewController.swift */,
+				7F06B1A625E017F200635711 /* ProfileTableViewCell.swift */,
+				7FA5013D25EF20CB00B3D5E8 /* DrawsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -251,8 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F44621D25D1B4E500CB2DEF /* Localizable.strings in Resources */,
 				7FBDC57225CDE5E700B1F647 /* LaunchScreen.storyboard in Resources */,
+				7FA5013725EEB2D200B3D5E8 /* Localizable.strings in Resources */,
 				7F06B16F25DF2AFE00635711 /* GoogleService-Info.plist in Resources */,
 				7FBDC56F25CDE5E700B1F647 /* Assets.xcassets in Resources */,
 				7FBDC56D25CDE5E600B1F647 /* Main.storyboard in Resources */,
@@ -311,10 +311,9 @@
 			files = (
 				7FBDC59825CE32D200B1F647 /* Tests.swift in Sources */,
 				7FBDC5B825CEF1CA00B1F647 /* CanadianFamilyViewController.swift in Sources */,
-				7FBDC59F25CE33CA00B1F647 /* StartViewController.swift in Sources */,
 				7F06B1A825E017F200635711 /* ProfileTableViewCell.swift in Sources */,
+				7FA5016A25EF232600B3D5E8 /* Draw.swift in Sources */,
 				7FBDC5B225CEEC0000B1F647 /* ExperiencesViewController.swift in Sources */,
-				7F06B15C25DF236100635711 /* DrawsViewController.swift in Sources */,
 				7FA9921725DEFF8700FDAA0F /* ScoresTableViewController.swift in Sources */,
 				7FBDC5A625CE405200B1F647 /* AgeViewController.swift in Sources */,
 				7FBDC5AC25CED0F900B1F647 /* CanadianDegreeViewController.swift in Sources */,
@@ -329,6 +328,7 @@
 				7FBDC5A325CE344800B1F647 /* MaritalStatusViewController.swift in Sources */,
 				7FBDC5BB25CEF3A700B1F647 /* PartnerInfoViewController.swift in Sources */,
 				7FBDC5AF25CED44400B1F647 /* LanguagesViewController.swift in Sources */,
+				7FA5013E25EF20CB00B3D5E8 /* DrawsTableViewController.swift in Sources */,
 				7FBDC59625CE32D200B1F647 /* Score.swift in Sources */,
 				7FBDC5BE25CEF41D00B1F647 /* ResultViewController.swift in Sources */,
 			);
@@ -337,10 +337,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7F44621F25D1B4E500CB2DEF /* Localizable.strings */ = {
+		7FA5013925EEB2D200B3D5E8 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7F44621E25D1B4E500CB2DEF /* vi */,
+				7FA5013B25EEB2EA00B3D5E8 /* vi */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -348,8 +348,8 @@
 		7FBDC56B25CDE5E600B1F647 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7FBDC56C25CDE5E600B1F647 /* Base */,
-				7F4461E825D17D8600CB2DEF /* vi */,
+				7FA5012825EE9EE600B3D5E8 /* Base */,
+				7FA5012A25EE9F0600B3D5E8 /* vi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -357,8 +357,8 @@
 		7FBDC57025CDE5E700B1F647 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7FBDC57125CDE5E700B1F647 /* Base */,
-				7F4461E925D17D8600CB2DEF /* vi */,
+				7FA5012925EE9EE800B3D5E8 /* Base */,
+				7FA5012B25EE9F0800B3D5E8 /* vi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -491,7 +491,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L3UCF6NGHF;
 				INFOPLIST_FILE = "CRS Tool/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -499,7 +499,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.vietlife.CRS-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -514,7 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L3UCF6NGHF;
 				INFOPLIST_FILE = "CRS Tool/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -522,7 +522,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.vietlife.CRS-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

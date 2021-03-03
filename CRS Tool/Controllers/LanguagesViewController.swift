@@ -12,9 +12,16 @@ class LanguagesViewController: UIViewController {
     var score: Score?
     let realm = try! Realm()
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var firstLanguageSegmentedControl: UISegmentedControl!
     @IBOutlet weak var secondLanguageSegmentedControl: UISegmentedControl!
     
+    @IBOutlet weak var secondTestView: UIView!
+    @IBOutlet weak var firstScoreView: UIView!
+    @IBOutlet weak var secondScoreView: UIView!
+    @IBOutlet weak var firstScore: UILabel!
+    @IBOutlet weak var secondScore: UILabel!
+    @IBOutlet weak var secondLanguageView: UIView!
     
     @IBOutlet weak var haveSecondLanguageSwitch: UISwitch!
     
@@ -57,26 +64,19 @@ class LanguagesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UISegmentedControl.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.white], for: .selected)
         
         if let score = score {
             // Second Test
             haveSecondLanguageSwitch.setOn(score.haveSecondLanguage, animated: true)
             if haveSecondLanguageSwitch.isOn {
-                secondLanguageSegmentedControl.isHidden = false
                 for i in 0..<secondTests.count {
                     secondLanguageSegmentedControl.setTitle(secondTests[i].name, forSegmentAt: i)
                 }
                 secondLanguageSegmentedControl.selectedSegmentIndex = score.secondTest.selectedTest
                 
-                secondSpeakingLabel.isHidden = false
-                secondListeningLabel.isHidden = false
-                secondReadingLabel.isHidden = false
-                secondWritingLabel.isHidden = false
-                
-                secondSpeakingStepper.isHidden = false
-                secondListeningStepper.isHidden = false
-                secondReadingStepper.isHidden = false
-                secondWritingStepper.isHidden = false
+                secondScoreView.isHidden = false
+                secondLanguageView.isHidden = false
                 
                 secondSpeakingLabel.text = "\(K.SPEAKING): \(secondSpeakings[score.secondTest.speaking])"
                 secondListeningLabel.text = "\(K.LISTENING): \(secondListenings[score.secondTest.listening])"
@@ -87,17 +87,12 @@ class LanguagesViewController: UIViewController {
                 secondListeningStepper.value = Double(score.secondTest.listening)
                 secondReadingStepper.value = Double(score.secondTest.reading)
                 secondWritingStepper.value = Double(score.secondTest.writing)
-            } else {
-                secondLanguageSegmentedControl.isHidden = true
-                secondSpeakingLabel.isHidden = true
-                secondListeningLabel.isHidden = true
-                secondReadingLabel.isHidden = true
-                secondWritingLabel.isHidden = true
                 
-                secondSpeakingStepper.isHidden = true
-                secondListeningStepper.isHidden = true
-                secondReadingStepper.isHidden = true
-                secondWritingStepper.isHidden = true
+                scrollView.isScrollEnabled = true
+            } else {
+                secondScoreView.isHidden = true
+                secondLanguageView.isHidden = true
+                scrollView.isScrollEnabled = false
             }
             
             //First test
@@ -112,6 +107,11 @@ class LanguagesViewController: UIViewController {
             listeningLabel.text = "\(K.LISTENING): \(listenings[score.firstTest.listening])"
             readingLabel.text = "\(K.READING): \(readings[score.firstTest.reading])"
             writingLabel.text = "\(K.WRITING): \(writings[score.firstTest.writing])"
+            
+            firstScore.text = "+ \(score.firstTestToScore())"
+            secondScore.text = "+ \(score.secondTestToScore())"
+            
+            secondTestView.backgroundColor = score.haveSecondLanguage ? UIColor.white : UIColor(named: K.BACKGROUND)
         }
     }
     
@@ -142,6 +142,7 @@ class LanguagesViewController: UIViewController {
                 score.firstTest.speaking =  Int(sender.value)
                 speakingLabel.text = "\(K.SPEAKING): \(speakings[score.firstTest.speaking])"
             }
+            firstScore.text = "+ \(score.firstTestToScore())"
         }
     }
     
@@ -151,6 +152,7 @@ class LanguagesViewController: UIViewController {
                 score.firstTest.listening =  Int(sender.value)
                 listeningLabel.text = "\(K.LISTENING): \(listenings[score.firstTest.listening])"
             }
+            firstScore.text = "+ \(score.firstTestToScore())"
         }
     }
     
@@ -160,6 +162,7 @@ class LanguagesViewController: UIViewController {
                 score.firstTest.reading =  Int(sender.value)
                 readingLabel.text = "\(K.READING): \(readings[score.firstTest.reading])"
             }
+            firstScore.text = "+ \(score.firstTestToScore())"
         }
     }
     
@@ -169,6 +172,7 @@ class LanguagesViewController: UIViewController {
                 score.firstTest.writing =  Int(sender.value)
                 writingLabel.text = "\(K.WRITING): \(writings[score.firstTest.writing])"
             }
+            firstScore.text = "+ \(score.firstTestToScore())"
         }
     }
     
@@ -180,6 +184,7 @@ class LanguagesViewController: UIViewController {
                 score.secondTest.speaking =  Int(sender.value)
                 secondSpeakingLabel.text = "\(K.SPEAKING): \(secondSpeakings[score.secondTest.speaking])"
             }
+            secondScore.text = "+ \(score.secondTestToScore())"
         }
     }
     
@@ -189,6 +194,7 @@ class LanguagesViewController: UIViewController {
                 score.secondTest.listening =  Int(sender.value)
                 secondListeningLabel.text = "\(K.LISTENING): \(secondListenings[score.secondTest.listening])"
             }
+            secondScore.text = "+ \(score.secondTestToScore())"
         }
     }
     
@@ -198,6 +204,7 @@ class LanguagesViewController: UIViewController {
                 score.secondTest.reading =  Int(sender.value)
                 secondReadingLabel.text = "\(K.READING): \(secondReadings[score.secondTest.reading])"
             }
+            secondScore.text = "+ \(score.secondTestToScore())"
         }
     }
     
@@ -207,23 +214,15 @@ class LanguagesViewController: UIViewController {
                 score.secondTest.writing =  Int(sender.value)
                 secondWritingLabel.text = "\(K.WRITING): \(secondWritings[score.secondTest.writing])"
             }
+            secondScore.text = "+ \(score.secondTestToScore())"
         }
     }
     
     // MARK: - Switch Control
     
     @IBAction func haveSeconLanguageChanged(_ sender: UISwitch) {
-        secondLanguageSegmentedControl.isHidden.toggle()
-        secondSpeakingLabel.isHidden.toggle()
-        secondListeningLabel.isHidden.toggle()
-        secondReadingLabel.isHidden.toggle()
-        secondWritingLabel.isHidden.toggle()
-        
-        secondSpeakingStepper.isHidden.toggle()
-        secondListeningStepper.isHidden.toggle()
-        secondReadingStepper.isHidden.toggle()
-        secondWritingStepper.isHidden.toggle()
-        
+        secondLanguageView.isHidden.toggle()
+        secondScoreView.isHidden.toggle()
         if let score = score {
             try! realm.write {
                 score.haveSecondLanguage = sender.isOn
@@ -237,8 +236,15 @@ class LanguagesViewController: UIViewController {
                 secondListeningLabel.text = "\(K.LISTENING): \(secondListenings[score.secondTest.listening])"
                 secondReadingLabel.text = "\(K.READING): \(secondReadings[score.secondTest.reading])"
                 secondWritingLabel.text = "\(K.WRITING): \(secondWritings[score.secondTest.writing])"
+                
+                secondScore.text = "+ \(score.secondTestToScore())"
+                scrollView.setContentOffset(CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.height + scrollView.contentInset.bottom), animated: true)
+            } else {
+                scrollView.setContentOffset(.zero, animated: true)
             }
+            secondTestView.backgroundColor = sender.isOn ? UIColor.white : UIColor(named: K.BACKGROUND)
         }
+        scrollView.isScrollEnabled.toggle()
     }
     // MARK: - Segmented Control
     
@@ -263,6 +269,8 @@ class LanguagesViewController: UIViewController {
                 secondReadingLabel.text = "\(K.READING): \(secondReadings[score.secondTest.reading])"
                 secondWritingLabel.text = "\(K.WRITING): \(secondWritings[score.secondTest.writing])"
             }
+            
+            firstScore.text = "+ \(score.firstTestToScore())"
         }
     }
     
@@ -275,6 +283,8 @@ class LanguagesViewController: UIViewController {
             secondListeningLabel.text = "\(K.LISTENING): \(secondListenings[score.secondTest.listening])"
             secondReadingLabel.text = "\(K.READING): \(secondReadings[score.secondTest.reading])"
             secondWritingLabel.text = "\(K.WRITING): \(secondWritings[score.secondTest.writing])"
+            
+            secondScore.text = "+ \(score.secondTestToScore())"
         }
     }
     

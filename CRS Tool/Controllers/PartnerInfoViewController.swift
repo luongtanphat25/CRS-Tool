@@ -12,6 +12,20 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
     var score: Score?
     let realm = try! Realm()
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var viewA: UIView!
+    @IBOutlet weak var scoreA: UILabel!
+    
+    @IBOutlet weak var viewB: UIView!
+    @IBOutlet weak var scoreB: UILabel!
+    
+    @IBOutlet weak var viewC: UIView!
+    @IBOutlet weak var scoreC: UILabel!
+    @IBOutlet weak var viewScore: UIView!
+    
+    
+    @IBOutlet weak var testView: UIView!
     @IBOutlet weak var partnerExLabel: UILabel!
     @IBOutlet weak var partnerExStepper: UIStepper!
     
@@ -43,6 +57,7 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
         if let score = score {
             //Education
             educationLevelPicker.selectRow(score.partnerEducation, inComponent: 0, animated: true)
+            scoreA.text = "+ \(score.partnerEducationToScore())"
             
             //Experience
             partnerExStepper.value = Double(score.partnerEx)
@@ -56,21 +71,13 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             default:
                 partnerExLabel.text = "\(Int(partnerExStepper.value)) \(K.YEARS)"
             }
+            scoreB.text = "+ \(score.partnerExperienceToScore())"
             
             // Language Test
             partnerHaveTestSwitch.setOn(score.partnerHaveTest, animated: true)
             if partnerHaveTestSwitch.isOn {
-                testsSegmentedControl.isHidden = false
-                
-                speakingLabel.isHidden = false
-                listeningLabel.isHidden = false
-                readingLabel.isHidden = false
-                writingLabel.isHidden = false
-                
-                speakingStepper.isHidden = false
-                listeningStepper.isHidden = false
-                readingStepper.isHidden = false
-                writingStepper.isHidden = false
+                viewScore.isHidden = false
+                viewC.isHidden = false
                 
                 testsSegmentedControl.selectedSegmentIndex = score.partnerTest.selectedTest
                 speakingLabel.text = "\(K.SPEAKING): \(speakings[score.partnerTest.speaking])"
@@ -82,19 +89,19 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
                 listeningStepper.value = Double(score.partnerTest.listening)
                 readingStepper.value = Double(score.partnerTest.reading)
                 writingStepper.value = Double(score.partnerTest.writing)
-            } else {
-                testsSegmentedControl.isHidden = true
-                speakingLabel.isHidden = true
-                listeningLabel.isHidden = true
-                readingLabel.isHidden = true
-                writingLabel.isHidden = true
                 
-                speakingStepper.isHidden = true
-                listeningStepper.isHidden = true
-                readingStepper.isHidden = true
-                writingStepper.isHidden = true
+                scoreC.text = "+ \(score.partnerCLBToScore())"
+            } else {
+                viewScore.isHidden = true
+                viewC.isHidden = true
             }
+            testView.backgroundColor = score.partnerHaveTest ? UIColor.white : UIColor(named: K.BACKGROUND)
         }
+        
+        scrollView.setNeedsLayout()
+        scrollView.layoutIfNeeded()
+        scrollView.setContentOffset(.zero, animated: true)
+        scrollView.contentSize.height -= partnerHaveTestSwitch.isOn ? 0 : viewScore.frame.height
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
@@ -128,20 +135,13 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             default:
                 partnerExLabel.text = "\(Int(sender.value)) \(K.YEARS)"
             }
+            scoreB.text = "+ \(score.partnerExperienceToScore())"
         }
     }
     @IBAction func haveTestChanged(_ sender: UISwitch) {
-        testsSegmentedControl.isHidden.toggle()
-        speakingLabel.isHidden.toggle()
-        listeningLabel.isHidden.toggle()
-        readingLabel.isHidden.toggle()
-        writingLabel.isHidden.toggle()
-        
-        speakingStepper.isHidden.toggle()
-        listeningStepper.isHidden.toggle()
-        readingStepper.isHidden.toggle()
-        writingStepper.isHidden.toggle()
-        
+        viewScore.isHidden.toggle()
+        viewC.isHidden.toggle()
+        testView.backgroundColor = sender.isOn ? UIColor.white : UIColor(named: K.BACKGROUND)
         if let score = score {
             try! realm.write {
             score.partnerHaveTest = sender.isOn
@@ -151,7 +151,14 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
                 listeningLabel.text = "\(K.LISTENING): \(listenings[score.partnerTest.listening])"
                 readingLabel.text = "\(K.READING): \(readings[score.partnerTest.reading])"
                 writingLabel.text = "\(K.WRITING): \(writings[score.partnerTest.writing])"
+                
+                scrollView.contentSize.height += viewScore.frame.height
+                scrollView.setContentOffset(CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.height + scrollView.contentInset.bottom), animated: true)
+            } else {
+                scrollView.contentSize.height -= viewScore.frame.height
+                scrollView.setContentOffset(CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.height + scrollView.contentInset.bottom), animated: true)
             }
+            scoreC.text = "+ \(score.partnerCLBToScore())"
         }
     }
     // MARK: - Picker
@@ -171,9 +178,8 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
         let title = UILabel(frame: CGRect(x: 0, y: 0, width: pickerView.frame.size.width - 30, height: 50))
         title.text = K.EDUCATION_LEVELS[row]
         title.font = UIFont(name: "System", size: 17)
-        title.lineBreakMode = .byWordWrapping;
+        title.textColor = UIColor(named: K.TEXT)
         title.numberOfLines = 0;
-        title.sizeToFit()
         return title
     }
     
@@ -182,6 +188,7 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             try! realm.write {
             score.partnerEducation = row
             }
+            scoreA.text = "+ \(score.partnerEducationToScore())"
         }
     }
     
@@ -197,6 +204,7 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             listeningLabel.text = "\(K.LISTENING): \(listenings[score.partnerTest.listening])"
             readingLabel.text = "\(K.READING): \(readings[score.partnerTest.reading])"
             writingLabel.text = "\(K.WRITING): \(writings[score.partnerTest.writing])"
+            scoreC.text = "+ \(score.partnerCLBToScore())"
         }
     }
     
@@ -208,6 +216,7 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             score.partnerTest.speaking =  Int(sender.value)
             }
             speakingLabel.text = "\(K.SPEAKING): \(speakings[score.partnerTest.speaking])"
+            scoreC.text = "+ \(score.partnerCLBToScore())"
         }
     }
     
@@ -216,6 +225,7 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             try! realm.write {
                 score.partnerTest.listening =  Int(sender.value)}
             listeningLabel.text = "\(K.LISTENING): \(listenings[score.partnerTest.listening])"
+            scoreC.text = "+ \(score.partnerCLBToScore())"
         }
     }
     
@@ -224,6 +234,7 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             try! realm.write {
                 score.partnerTest.reading =  Int(sender.value)}
             readingLabel.text = "\(K.READING): \(readings[score.partnerTest.reading])"
+            scoreC.text = "+ \(score.partnerCLBToScore())"
         }
     }
     
@@ -232,6 +243,7 @@ class PartnerInfoViewController: UIViewController, UIPickerViewDataSource, UIPic
             try! realm.write {
                 score.partnerTest.writing =  Int(sender.value)}
             writingLabel.text = "\(K.WRITING): \(writings[score.partnerTest.writing])"
+            scoreC.text = "+ \(score.partnerCLBToScore())"
         }
     }
     

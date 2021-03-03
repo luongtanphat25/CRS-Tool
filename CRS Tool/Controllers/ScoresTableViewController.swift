@@ -14,16 +14,51 @@ class ScoresTableViewController: UITableViewController, SwipeTableViewCellDelega
     let realm = try! Realm()
     var scores: Results<Score>?
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewWillAppear(_ animated: Bool) {
         loadScores()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (!appDelegate.hasLaunched) {
+            //Add Default score
+            let newScore = Score()
+            newScore.tests.append(TestResult())
+            newScore.tests.append(TestResult())
+            newScore.tests.append(TestResult())
+            self.saveScore(newScore: newScore)
+            
+            //Welcome Alert
+            let alert = UIAlertController(title: K.WELCOME, message: K.WELCOME_MESSAGE, preferredStyle: .actionSheet)
+            
+            let action = UIAlertAction(title: K.OK_LABEL_BUTTON, style: .default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true)
+            appDelegate.setLaunched()
+        }
+        
         tableView.register(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: K.CELL)
         tableView.separatorStyle = .none
     }
-
+    
+    @IBAction func languageButtonPressed(_ sender: UIBarButtonItem) {
+        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+        
+        if UIApplication.shared.canOpenURL(settingsUrl) {
+            let alert = UIAlertController(title: K.CHANGE_LANGUAGE, message: K.CHANGE_LANGUAGE_MESSAGE, preferredStyle: .alert)
+            let action = UIAlertAction(title: K.OK_LABEL_BUTTON, style: .default) { _ in
+                UIApplication.shared.open(settingsUrl, completionHandler: nil)
+            }
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
         textField.autocapitalizationType = .words
@@ -50,25 +85,24 @@ class ScoresTableViewController: UITableViewController, SwipeTableViewCellDelega
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return scores?.count ?? 1
+        return scores?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.CELL, for: indexPath) as! ProfileTableViewCell
         cell.delegate = self
-
         if let score = scores?[indexPath.row] {
             cell.crs.text = "\(score.finalScore)"
             cell.crs.backgroundColor = UIColor(named: setColor(score: score.finalScore))
             cell.name.text = score.name
             cell.age.text = "\(K.AGE): \(score.ageToScore())"
             cell.education.text = "\(K.EDUCATION): \(score.educationToScore())"
-            cell.language.text = "\(K.LANGUAGE): \(score.firstTestToScore())"
+            cell.language.text = "\(K.LANGUAGE): \(score.firstTestToScore() + score.secondTestToScore())"
         }
         
         return cell
     }
-
+    
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
         guard orientation == .right else { return nil }
         
@@ -108,7 +142,8 @@ class ScoresTableViewController: UITableViewController, SwipeTableViewCellDelega
         
         deleteAction.image = UIImage(systemName: "trash.circle.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 50))
         editAction.image = UIImage(systemName: "pencil.circle.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 50))
-        editAction.backgroundColor = UIColor(named: K.U4)
+        editAction.backgroundColor = UIColor(named: K.BLUE_LIGHT)
+        deleteAction.backgroundColor = UIColor(named: K.RED)
         return [deleteAction, editAction]
     }
     
@@ -154,18 +189,20 @@ class ScoresTableViewController: UITableViewController, SwipeTableViewCellDelega
         }
     }
     
+    // MARK: - Functions
+    
     func setColor(score: Int) -> String {
         switch score {
         case ...200:
-            return K.U2
+            return K.BLUE_DARK
         case ...400:
-            return K.U4
+            return K.BLUE_LIGHT
         case ...600:
-            return K.U6
+            return K.GREEN_LIGHT
         case ...800:
-            return K.U8
+            return K.YELLOW
         default:
-            return K.U
+            return K.ORANGE
         }
     }
 }

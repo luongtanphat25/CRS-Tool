@@ -59,8 +59,7 @@ struct K {
     static let BADLY_FORMATTED = NSLocalizedString("The email address is badly formatted.", comment: "")
     
     static let OK_LABEL_BUTTON = "OK"
-    static let BLUE = "Blue"
-    static let GREY = "Grey"
+    
     
     static let CELL = "cell"
     static let FROM_CELL = "fromCell"
@@ -76,17 +75,35 @@ struct K {
     
     static let AGE = NSLocalizedString("Age", comment: "")
     static let EDUCATION = NSLocalizedString("Education", comment: "")
-    static let LANGUAGE = NSLocalizedString("First language", comment: "")
+    static let LANGUAGE = NSLocalizedString("Language", comment: "")
     
     static let CHANGE_NAME = NSLocalizedString("Change name", comment: "")
     static let CHANGE_MESSAGE = NSLocalizedString("Please enter a new name", comment: "")
     static let SAVE = NSLocalizedString("Save", comment: "")
     
-    static let U2 = "under200"
-    static let U4 = "under400"
-    static let U6 = "under600"
-    static let U8 = "under800"
-    static let U = "under1000"
+    static let WELCOME = NSLocalizedString("Welcome", comment: "")
+    static let WELCOME_MESSAGE = NSLocalizedString("Thank you for your download. To add a new profile, press the red button on the right corner. Press the profile to edit. Swipe to the right to change the profile's name or delete.", comment: "")
     
-    static let URL = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html"
+    static let CHANGE_LANGUAGE = NSLocalizedString("Change to Vietnamese", comment: "")
+    static let CHANGE_LANGUAGE_MESSAGE = NSLocalizedString("Set preferred language to Vietnamese in Settings.", comment: "")
+    
+    // Color
+    static let RED = "Red"
+    static let GREY = "Grey"
+    static let BLUE_DARK = "Blue_Dark"
+    static let BLUE_LIGHT = "Blue_Light"
+    static let GREEN_LIGHT = "Green_Light"
+    static let YELLOW = "Yellow"
+    static let ORANGE = "Orange"
+    static let BACKGROUND = "Background"
+    static let TEXT = "Text"
+    
+    struct FStore {
+        static let collectionName = "draws"
+        static let score = "score"
+        static let date = "date"
+        static let invitations = "invitations"
+    }
+    
+    static let INVITATIONS = NSLocalizedString("Invitations:", comment: "")
 }

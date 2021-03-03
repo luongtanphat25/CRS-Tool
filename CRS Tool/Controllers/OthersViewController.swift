@@ -12,11 +12,21 @@ class OthersViewController: UIViewController {
     var score: Score?
     let realm = try! Realm()
     
+    @IBOutlet weak var viewA: UIView!
+   
+    @IBOutlet weak var viewC: UIView!
+    
     @IBOutlet weak var haveCertificate: UISwitch!
-    @IBOutlet weak var haveNomination: UISwitch!
+   
     @IBOutlet weak var haveJobOffer: UISwitch!
     
-    @IBOutlet weak var nocLabel: UILabel!
+   
+    @IBOutlet weak var scoreA: UILabel!
+    
+    @IBOutlet weak var scoreC: UILabel!
+    @IBOutlet weak var bigView: UIView!
+    
+    
     @IBOutlet weak var nocSegmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
@@ -24,27 +34,54 @@ class OthersViewController: UIViewController {
 
         if let score = score {
             haveCertificate.setOn(score.haveCertificate, animated: true)
-            haveNomination.setOn(score.haveNomination, animated: true)
+            
             haveJobOffer.setOn(score.haveJobOffer, animated: true)
             
             if haveJobOffer.isOn {
-                nocLabel.isHidden = false
                 nocSegmentedControl.isHidden = false
                 nocSegmentedControl.selectedSegmentIndex = score.noc
             } else {
-                nocLabel.isHidden = true
                 nocSegmentedControl.isHidden = true
             }
+            
+            scoreA.text = "+ \(score.certificateAndCLBToScore())"
+           
+            scoreC.text = "+ \(score.jobOfferToScore())"
+            
+            viewA.isHidden = !score.haveCertificate
+            
+            viewC.isHidden = !score.haveJobOffer
+            
+            bigView.backgroundColor = score.haveJobOffer ? UIColor.white : UIColor(named: K.BACKGROUND)
+        }
+    }
+    @IBAction func haveCertificateChanged(_ sender: UISwitch) {
+        if let score = score {
+            try! realm.write {
+                score.haveCertificate = sender.isOn
+            }
+            scoreA.text = "+ \(score.certificateAndCLBToScore())"
+            viewA.isHidden = !sender.isOn
         }
     }
     
     @IBAction func haveJobOfferChanged(_ sender: UISwitch) {
-        nocLabel.isHidden.toggle()
         nocSegmentedControl.isHidden.toggle()
-        if let score = score, sender.isOn {
+        if let score = score {
             try! realm.write {
-            score.noc = nocSegmentedControl.selectedSegmentIndex
+                score.haveJobOffer = sender.isOn
             }
+            scoreC.text = "+ \(score.jobOfferToScore())"
+            viewC.isHidden = !sender.isOn
+        }
+        bigView.backgroundColor = sender.isOn ? UIColor.white : UIColor(named: K.BACKGROUND)
+    }
+    @IBAction func nocChanged(_ sender: UISegmentedControl) {
+        if let score = score {
+            try! realm.write{
+                score.noc = sender.selectedSegmentIndex
+            }
+            scoreC.text = "+ \(score.jobOfferToScore())"
         }
     }
     
@@ -52,7 +89,6 @@ class OthersViewController: UIViewController {
         if let score = score {
             try! realm.write {
             score.haveCertificate = haveCertificate.isOn
-            score.haveNomination = haveNomination.isOn
             score.haveJobOffer = haveJobOffer.isOn
             score.noc = haveJobOffer.isOn ? nocSegmentedControl.selectedSegmentIndex : score.noc
             }
