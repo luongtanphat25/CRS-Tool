@@ -97,4 +97,13 @@ struct K {
     static let ORANGE = "Orange"
     static let BACKGROUND = "Background"
     static let TEXT = "Text"
+    
+    struct FStore {
+        static let collectionName = "draws"
+        static let score = "score"
+        static let date = "date"
+        static let invitations = "invitations"
+    }
+    
+    static let INVITATIONS = NSLocalizedString("Invitations:", comment: "")
 }

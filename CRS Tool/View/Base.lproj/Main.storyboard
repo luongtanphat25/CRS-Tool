@@ -37,7 +37,11 @@
                                     <action selector="addButtonPressed:" destination="Cqp-5o-0By" id="C1a-gn-f8g"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Draw" id="dg1-ss-MmQ"/>
+                            <barButtonItem title="Draws" id="dg1-ss-MmQ">
+                                <connections>
+                                    <segue destination="c3y-ox-eqs" kind="show" id="XOE-eT-LfV"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -48,6 +52,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsy-DA-D8p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="349" y="43"/>
+        </scene>
+        <!--Draws-->
+        <scene sceneID="aG8-Te-aMh">
+            <objects>
+                <tableViewController id="c3y-ox-eqs" customClass="DrawsTableViewController" customModule="CRS_Tool" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YN7-Dl-ihG">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="c3y-ox-eqs" id="sj8-bJ-2ho"/>
+                            <outlet property="delegate" destination="c3y-ox-eqs" id="jD3-sH-kDz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Draws" id="kTe-Sk-cnb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ihv-TX-NcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348" y="744"/>
         </scene>
         <!--MaritalStatus-->
         <scene sceneID="8PK-us-Shr">

@@ -13,6 +13,8 @@
 		7F06B1A925E017F200635711 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F06B1A725E017F200635711 /* ProfileTableViewCell.xib */; };
 		7F540AE325CF702400EC8250 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F540AE225CF702400EC8250 /* SignUpViewController.swift */; };
 		7FA5013725EEB2D200B3D5E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FA5013925EEB2D200B3D5E8 /* Localizable.strings */; };
+		7FA5013E25EF20CB00B3D5E8 /* DrawsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA5013D25EF20CB00B3D5E8 /* DrawsTableViewController.swift */; };
+		7FA5016A25EF232600B3D5E8 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA5016925EF232600B3D5E8 /* Draw.swift */; };
 		7FA9921725DEFF8700FDAA0F /* ScoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA9921625DEFF8700FDAA0F /* ScoresTableViewController.swift */; };
 		7FBDC56625CDE5E600B1F647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC56525CDE5E600B1F647 /* AppDelegate.swift */; };
 		7FBDC56825CDE5E600B1F647 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDC56725CDE5E600B1F647 /* SceneDelegate.swift */; };
@@ -49,6 +51,8 @@
 		7FA5012A25EE9F0600B3D5E8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
 		7FA5012B25EE9F0800B3D5E8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7FA5013B25EEB2EA00B3D5E8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7FA5013D25EF20CB00B3D5E8 /* DrawsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsTableViewController.swift; sourceTree = "<group>"; };
+		7FA5016925EF232600B3D5E8 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
 		7FA9921625DEFF8700FDAA0F /* ScoresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresTableViewController.swift; sourceTree = "<group>"; };
 		7FBDC56225CDE5E600B1F647 /* CRS Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CRS Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBDC56525CDE5E600B1F647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 				7FBDC59025CE32D200B1F647 /* Test.swift */,
 				7FBDC59225CE32D200B1F647 /* TestResult.swift */,
 				7FBDC59325CE32D200B1F647 /* Tests.swift */,
+				7FA5016925EF232600B3D5E8 /* Draw.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				7F540AE225CF702400EC8250 /* SignUpViewController.swift */,
 				7FA9921625DEFF8700FDAA0F /* ScoresTableViewController.swift */,
 				7F06B1A625E017F200635711 /* ProfileTableViewCell.swift */,
+				7FA5013D25EF20CB00B3D5E8 /* DrawsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 				7FBDC59825CE32D200B1F647 /* Tests.swift in Sources */,
 				7FBDC5B825CEF1CA00B1F647 /* CanadianFamilyViewController.swift in Sources */,
 				7F06B1A825E017F200635711 /* ProfileTableViewCell.swift in Sources */,
+				7FA5016A25EF232600B3D5E8 /* Draw.swift in Sources */,
 				7FBDC5B225CEEC0000B1F647 /* ExperiencesViewController.swift in Sources */,
 				7FA9921725DEFF8700FDAA0F /* ScoresTableViewController.swift in Sources */,
 				7FBDC5A625CE405200B1F647 /* AgeViewController.swift in Sources */,
@@ -321,6 +328,7 @@
 				7FBDC5A325CE344800B1F647 /* MaritalStatusViewController.swift in Sources */,
 				7FBDC5BB25CEF3A700B1F647 /* PartnerInfoViewController.swift in Sources */,
 				7FBDC5AF25CED44400B1F647 /* LanguagesViewController.swift in Sources */,
+				7FA5013E25EF20CB00B3D5E8 /* DrawsTableViewController.swift in Sources */,
 				7FBDC59625CE32D200B1F647 /* Score.swift in Sources */,
 				7FBDC5BE25CEF41D00B1F647 /* ResultViewController.swift in Sources */,
 			);
